@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juwita Nur Ihzza - Portfolio</title>
+    <meta name="description" content="Portfolio of Juwita Nur Ihzza - Data & Business Analyst">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div id="pacman-cursor" class="custom-cursor">
+        <div class="pacman-top"></div>
+        <div class="pacman-bottom"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <h1 class="blink text-yellow">LOADING PORTFOLIO</h1>
+            <div class="pacman-loader-container">
+                <div class="pacman-loader">
+                    <div class="pacman-loader-top"></div>
+                    <div class="pacman-loader-bottom"></div>
+                </div>
+                <div class="dots-loader">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <p>INSERT YOUR COIN...</p>
+        </div>
+    </div>
+
+    <div class="scanlines"></div>
+    <div class="crt-overlay"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-brand text-cyan">PORTFOLIO</div>
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#project">PROJECT</a></li>
+            <li><a href="#certifications">CERTIFICATION</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="screen active">
+            <div class="hero">
+                <h3 class="welcome-text text-pink blink">WELCOME TO MY PORTFOLIO</h3>
+                <h1 class="neon-text-yellow mt-4">JUWITA NUR IHZZA</h1>
+                <div class="typewriter-container text-cyan mt-4">
+                    <span>> </span><span id="typewriter-text" class="arcade-text"></span><span class="cursor">_</span>
+                </div>
+                <div class="ghosts-container">
+                    <div class="ghost blinky"><div class="ghost-eyes"></div></div>
+                    <div class="ghost pinky"><div class="ghost-eyes"></div></div>
+                    <div class="ghost inky"><div class="ghost-eyes"></div></div>
+                    <div class="ghost clyde"><div class="ghost-eyes"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="screen">
+            <h2 class="section-title text-pink">ABOUT ME</h2>
+            
+            <div class="about-container">
+                <!-- Profile Image -->
+                <div class="profile-box pixel-box border-pink">
+                    <div class="profile-img-container">
+                        <!-- User to replace this src with their actual photo -->
+                        <img src="profile.jpg" alt="Juwita Nur Ihzza" onerror="this.src='https://via.placeholder.com/250x300/111/FFB8FF?text=INSERT+PHOTO'">
+                    </div>
+                </div>
+
+                <!-- About Content -->
+                <div class="about-content">
+                    <div class="about-text pixel-box border-yellow">
+                        <p>Data and business analyst with hands-on experience in workforce reporting, dashboard development, and data management.</p>
+                        <p>Skilled in Excel, SQL, Python, Power BI, and Looker Studio to clean, analyze, and visualize data into actionable insights for KPI monitoring, reporting, and decision support.</p>
+                                                <p>Detail-oriented and proactive, with experience handling employee, sales, and operational data to improve reporting accuracy and support business decisions.</p>
+                        
+                        <div class="mt-4 p-3 border-l-2 border-cyan pixel-box" style="background: rgba(0, 255, 255, 0.05); margin-bottom: 20px;">
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <img src="assets/profile/its_logo.png" alt="ITS Logo" style="width: 50px; height: 50px; object-fit: contain;" onerror="this.style.display='none'">
+                                <div>
+                                    <h4 class="text-cyan mb-1" style="margin:0; font-size: 0.9em;">Sepuluh Nopember Institute of Technology (ITS)</h4>
+                                    <p style="margin: 0; font-size: 0.85em;" class="text-yellow">Business Statistics • GPA: 3.75/4.00</p>
+                                    <a href="https://drive.google.com/file/d/19KFeFkdbfpJVbUOCMUTY3AMS7h08Xt4t/view?usp=sharing" target="_blank" class="text-pink hover-glow" style="font-size: 0.8em; text-decoration: underline; display: inline-block; margin-top: 5px;">[ View Transcript ]</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="CV_Juwita.pdf" class="arcade-btn border-yellow mt-4" download>
+                            [ DOWNLOAD CV ]
+                        </a>
+                    </div>
+                    
+                    <div class="skills-container pixel-box border-cyan">
+                                                                                                <h3 class="text-cyan text-center mb-4 text-xl">&lt;/&gt; TOOLS & SKILLS</h3>
+                        
+                        <div class="tech-stack-container">
+                            <!-- Data Analysis -->
+                            <div class="tech-category">
+                                <h4 class="text-yellow mb-3" style="display:flex; align-items:center; gap:8px;">
+                                    <span style="width:8px; height:8px; background:var(--pacman-yellow); border-radius:50%; display:inline-block;"></span> 
+                                    Data Analysis
+                                </h4>
+                                <div class="tech-icons-grid">
+                                    <div class="tech-icon-wrap"><img src="assets/profile/Mysql_logo.png" alt="SQL" onerror="this.src='https://via.placeholder.com/40x40/1a1a2e/FFB8FF?text=?'"><span class="tooltip">SQL / MySQL</span></div>
+                                    <div class="tech-icon-wrap"><img src="assets/profile/rstudio.png" alt="RStudio" onerror="this.src='https://via.placeholder.com/40x40/1a1a2e/FFB8FF?text=?'"><span class="tooltip">RStudio</span></div>
+                                    <div class="tech-icon-wrap"><img src="assets/profile/spss.png" alt="SPSS" onerror="this.src='https://via.placeholder.com/40x40/1a1a2e/FFB8FF?text=?'"><span class="tooltip">SPSS</span></div>
+                                    <div class="tech-icon-wrap"><img src="assets/profile/minitab.png" alt="Minitab" onerror="this.src='https://via.placeholder.com/40x40/1a1a2e/FFB8FF?text=?'"><span class="tooltip">Minitab</span></div>
+                                </div>
+                            </div>
+                            
+                            <!-- ML & Automation -->
+                            <div class="tech-category mt-6">
+                                <h4 class="text-orange mb-3" style="display:flex; align-items:center; gap:8px;">
+                                    <span style="width:8px; height:8px; background:var(--clyde-orange); border-radius:50%; display:inline-block;"></span> 
+                                    ML & Automation
+                                </h4>
+                                <div class="tech-icons-grid">
+                                    <div class="tech-icon-wrap"><img src="assets/profile/python.png" alt="Python" onerror="this.src='https://via.placeholder.com/40x40/1a1a2e/FFB8FF?text=?'"><span class="tooltip">Python</span></div>
+                                    <div class="tech-icon-wrap"><img src="assets/profile/collab.png" alt="Google Colab" onerror="this.src='https://via.placeholder.com/40x40/1a1a2e/FFB8FF?text=?'"><span class="tooltip">Google Colab</span></div>
+                                    <div class="tech-icon-wrap"><img src="assets/profile/genai.png" alt="Generative AI" onerror="this.src='https://via.placeholder.com/40x40/1a1a2e/FFB8FF?text=?'"><span class="tooltip">Generative AI</span></div>
+                                    <div class="tech-icon-wrap"><img src="assets/profile/appscript.png" alt="Apps Script" onerror="this.src='https://via.placeholder.com/40x40/1a1a2e/FFB8FF?text=?'"><span class="tooltip">Apps Script</span></div>
+                                </div>
+                            </div>
+
+                            <!-- Data Visualization -->
+                            <div class="tech-category mt-6">
+                                <h4 class="text-pink mb-3" style="display:flex; align-items:center; gap:8px;">
+                                    <span style="width:8px; height:8px; background:var(--blinky-red); border-radius:50%; display:inline-block;"></span> 
+                                    Data Visualization
+                                </h4>
+                                <div class="tech-icons-grid">
+                                    <div class="tech-icon-wrap"><img src="assets/profile/powerbi.png" alt="Power BI" onerror="this.src='https://via.placeholder.com/40x40/1a1a2e/FFB8FF?text=?'"><span class="tooltip">Power BI</span></div>
+                                    <div class="tech-icon-wrap"><img src="assets/profile/Tableau.png" alt="Tableau" onerror="this.src='https://via.placeholder.com/40x40/1a1a2e/FFB8FF?text=?'"><span class="tooltip">Tableau</span></div>
+                                    <div class="tech-icon-wrap"><img src="assets/profile/looker.png" alt="Looker Studio" onerror="this.src='https://via.placeholder.com/40x40/1a1a2e/FFB8FF?text=?'"><span class="tooltip">Looker Studio</span></div>
+                                    <div class="tech-icon-wrap"><img src="assets/profile/streamlit.png" alt="Streamlit" onerror="this.src='https://via.placeholder.com/40x40/1a1a2e/FFB8FF?text=?'"><span class="tooltip">Streamlit</span></div>
+                                </div>
+                            </div>
+
+                            <!-- Microsoft & Tools -->
+                            <div class="tech-category mt-6">
+                                <h4 class="text-green mb-3" style="display:flex; align-items:center; gap:8px;">
+                                    <span style="width:8px; height:8px; background:#32E0C4; border-radius:50%; display:inline-block;"></span> 
+                                    Microsoft & Tools
+                                </h4>
+                                <div class="tech-icons-grid">
+                                    <div class="tech-icon-wrap"><img src="assets/profile/msword.png" alt="Ms Word" onerror="this.src='https://via.placeholder.com/40x40/1a1a2e/FFB8FF?text=?'"><span class="tooltip">Microsoft Word</span></div>
+                                    <div class="tech-icon-wrap"><img src="assets/profile/excel.png" alt="Excel" onerror="this.src='https://via.placeholder.com/40x40/1a1a2e/FFB8FF?text=?'"><span class="tooltip">Excel</span></div>
+                                    <div class="tech-icon-wrap"><img src="assets/profile/canva.png" alt="Canva" onerror="this.src='https://via.placeholder.com/40x40/1a1a2e/FFB8FF?text=?'"><span class="tooltip">Canva</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+
+                                    <!-- Logos Marquee -->
+            <div class="marquee-container mt-4 pixel-box border-orange" style="overflow: hidden; white-space: nowrap; padding: 20px 0;">
+                <div class="marquee" style="display: inline-flex; gap: 50px; animation: scroll-left 25s linear infinite; align-items: center;">
+                    <!-- Original Set -->
+                    <img src="assets/profile/python.png" class="marquee-logo" alt="Python" onerror="this.src='assets/tech_stack/python.png'">
+                    <img src="assets/profile/Mysql_logo.png" class="marquee-logo" alt="SQL" onerror="this.src='assets/tech_stack/sql.png'">
+                    <img src="assets/profile/excel.png" class="marquee-logo" alt="Excel" onerror="this.style.display='none'">
+                    <img src="assets/profile/collab.png" class="marquee-logo" alt="Colab" onerror="this.style.display='none'">
+                    <img src="assets/profile/spss.png" class="marquee-logo" alt="SPSS" onerror="this.style.display='none'">
+                    <img src="assets/profile/powerbi.png" class="marquee-logo" alt="Power BI" onerror="this.style.display='none'">
+                    <img src="assets/profile/Tableau.png" class="marquee-logo" alt="Tableau" onerror="this.style.display='none'">
+                    <img src="assets/profile/looker.png" class="marquee-logo" alt="Looker" onerror="this.style.display='none'">
+                    <img src="assets/profile/msword.png" class="marquee-logo" alt="Ms Word" onerror="this.style.display='none'">
+                    <img src="assets/profile/canva.png" class="marquee-logo" alt="Canva" onerror="this.style.display='none'">
+                    
+                    <!-- Duplicate Set for Seamless Loop -->
+                    <img src="assets/profile/python.png" class="marquee-logo" alt="Python" onerror="this.src='assets/tech_stack/python.png'">
+                    <img src="assets/profile/Mysql_logo.png" class="marquee-logo" alt="SQL" onerror="this.src='assets/tech_stack/sql.png'">
+                    <img src="assets/profile/excel.png" class="marquee-logo" alt="Excel" onerror="this.style.display='none'">
+                    <img src="assets/profile/collab.png" class="marquee-logo" alt="Colab" onerror="this.style.display='none'">
+                    <img src="assets/profile/spss.png" class="marquee-logo" alt="SPSS" onerror="this.style.display='none'">
+                    <img src="assets/profile/powerbi.png" class="marquee-logo" alt="Power BI" onerror="this.style.display='none'">
+                    <img src="assets/profile/Tableau.png" class="marquee-logo" alt="Tableau" onerror="this.style.display='none'">
+                    <img src="assets/profile/looker.png" class="marquee-logo" alt="Looker" onerror="this.style.display='none'">
+                    <img src="assets/profile/msword.png" class="marquee-logo" alt="Ms Word" onerror="this.style.display='none'">
+                    <img src="assets/profile/canva.png" class="marquee-logo" alt="Canva" onerror="this.style.display='none'">
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="screen">
+            <h2 class="section-title text-orange">EXPERIENCE</h2>
+            <div class="timeline">
+                
+                <!-- Borwita Experience -->
+                <div class="timeline-item pixel-box border-orange">
+                    <div class="timeline-header" onclick="toggleDetails(this)">
+                        <div class="timeline-title-area">
+                            <span class="badge border-pink text-pink">[ INTERNSHIP ]</span>
+                            <h3 class="text-yellow mt-2">PT Borwita Citra Prima</h3>
+                            <h4 class="text-cyan">HC Analyst | Organizational Talent Development (OTD)</h4>
+                            <span class="date text-pink">Jan 2026 - July 2026</span>
+                        </div>
+                        <div class="expand-icon text-orange">▼</div>
+                    </div>
+                    
+                    <div class="timeline-details hidden">
+                                                <div class="overview-box">
+                            <p><strong class="text-pink">Overview:</strong> Supported Talent Management initiatives within the Organizational Talent Development division through HR analytics, process digitalization, dashboard development, and HR system implementation, while contributing to Organization Development projects focused on workforce planning and employee development.</p>
+                        </div>
+                        
+                        <h4 class="text-yellow mt-4 mb-2">KEY RESPONSIBILITIES</h4>
+                        <ul class="pacman-bullets text-sm" style="margin-bottom: 20px;">
+                            <li>Coordinated STAR and Leadership Management Training programs for 72 employees, managing participant communication, training administration, LMS monitoring, documentation, and learning progress reporting.</li>
+                            <li>Managed, cleaned, and validated 10,000+ employee records, including KPI, coaching, psychometric, and training data, to support HR reporting, talent management, and employee development.</li>
+                            <li>Developed interactive Looker Studio dashboards for Talent Mapping, Leadership Development, and learning progress monitoring, enabling timely reporting and management decision-making.</li>
+                            <li>Built an Internship Management System using Google Apps Script to automate attendance, logbook, mentor approval, and payroll recap processes for 40+ interns, reducing administrative processing time by 98%.</li>
+                            <li>Developed a Talent Management System integrating vacancy requests, recruitment tracking, successor mapping, interview documentation, and talent monitoring to improve HR operational efficiency.</li>
+                        </ul>
+
+                        <h4 class="text-cyan mt-4 mb-2">PROJECTS</h4>
+                                                <!-- Nested Tabs for Borwita Projects -->
+                        <div class="nested-tabs">
+                            <button class="nested-tab active" onclick="filterNested(this, 'all')">ALL</button>
+                            <button class="nested-tab" onclick="filterNested(this, 'data-vis')">DATA VISUALIZATION</button>
+                            <button class="nested-tab" onclick="filterNested(this, 'web-dev')">WEB DEVELOPMENT</button>
+                            <button class="nested-tab" onclick="filterNested(this, 'machine-learning')">DATA ANALYSIS & ML</button>
+                        </div>
+                        
+                        <div class="nested-content">
+                                                        <!-- Orientation Dashboard -->
+                            <div class="nested-card data-vis">
+                                <h5 class="text-pink">Orientation Monitoring Dashboard</h5>
+                                <p class="text-sm"><strong class="text-pink">Overview:</strong> Interactive dashboard to monitor employee orientation progress and workforce movement (promotion, mutation, demotion).</p>
+                                
+                                <p class="text-sm mt-4 mb-2"><strong class="text-orange">Data Pipeline Workflow:</strong></p>
+                                <div class="workflow-container" style="transform: scale(0.9); transform-origin: left top; margin-bottom: -10px;">
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">1</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Data Collection</div>
+                                            <div class="workflow-desc text-xs">Orientation evaluation results & promotion/mutation records per employee.</div>
+                                        </div>
+                                    </div>
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">2</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Data Cleaning & Validation</div>
+                                            <div class="workflow-desc text-xs">Cleaning 10,000+ Employee Records (deduplication & cross-checking against master data).</div>
+                                        </div>
+                                    </div>
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">3</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Data Processing</div>
+                                            <div class="workflow-desc text-xs">Integration & Aggregation of datasets into one centralized sheet.</div>
+                                        </div>
+                                    </div>
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">4</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Visualization</div>
+                                            <div class="workflow-desc text-xs">Dashboard Build on Looker Studio (Orientation Tracking & Workforce Movement).</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-sm mt-2"><strong class="text-cyan">Output Used For:</strong> Tracking orientation completion, pass rates, and spotting workforce movement trends for faster reporting.</p>
+                                <p class="text-sm mb-2"><strong class="text-yellow">Tools:</strong> Looker Studio, Google Spreadsheet</p>
+                                <button class="arcade-btn border-pink mt-2" onclick='openGallery([{"src":"assets/experience/borwita-orientation-1.jpg", "type":"image", "caption":"Orientation Dashboard Slide 1"}])'>[ PREVIEW ]</button>
+                            </div>
+                            <!-- Leadership Dashboard -->
+                            <div class="nested-card data-vis">
+                                <h5 class="text-pink">Leadership Management Dashboard</h5>
+                                <p class="text-sm"><strong class="text-pink">Overview:</strong> Dashboard to monitor coaching completion, participant satisfaction, and program performance across training batches.</p>
+                                
+                                <p class="text-sm mt-4 mb-2"><strong class="text-orange">Data Pipeline Workflow:</strong></p>
+                                <div class="workflow-container" style="transform: scale(0.9); transform-origin: left top; margin-bottom: -10px;">
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">1</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Data Collection</div>
+                                            <div class="workflow-desc text-xs">Coaching Session Logging (recorded by Coach directly into master spreadsheet).</div>
+                                        </div>
+                                    </div>
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">2</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Data Cleaning & Validation</div>
+                                            <div class="workflow-desc text-xs">Standardization & Consistency Check (remove duplicates, standardize labels).</div>
+                                        </div>
+                                    </div>
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">3</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Data Processing</div>
+                                            <div class="workflow-desc text-xs">Aggregation & Scoring (compute average scores and rank coach performance).</div>
+                                        </div>
+                                    </div>
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">4</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Visualization</div>
+                                            <div class="workflow-desc text-xs">Dashboard Build on Looker Studio (Executive Summary, Leaderboard, Coach Page).</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-sm mt-2"><strong class="text-cyan">Output Used For:</strong> Identifying highest-performing batches and evaluating coach performance for management decision-making.</p>
+                                <p class="text-sm mb-2"><strong class="text-yellow">Tools:</strong> Looker Studio, Google Spreadsheet</p>
+                                <button class="arcade-btn border-pink mt-2" onclick='openGallery([{"src":"assets/experience/Leadership 1.jpg", "type":"image", "caption":"Leadership Overview"}, {"src":"assets/experience/Leadership 2.jpg", "type":"image", "caption":"Performance Metrics"}, {"src":"assets/experience/Leadership 3.jpg", "type":"image", "caption":"Analysis"}])'>[ PREVIEW ]</button>
+                            </div>
+                            <!-- Internship System -->
+                            <div class="nested-card web-dev">
+                                <h5 class="text-pink">Internship Attendance System (IMS)</h5>
+                                <p class="text-sm"><strong class="text-pink">Overview:</strong> Web-based system digitalizing attendance, logbook, mentor evaluation, and payroll recap for 40+ interns.</p>
+
+                                <p class="text-sm mt-4 mb-2"><strong class="text-orange">System Workflow:</strong></p>
+                                <div class="workflow-container" style="transform: scale(0.9); transform-origin: left top; margin-bottom: -10px;">
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">1</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Attendance & Logbook Submission</div>
+                                            <div class="workflow-desc text-xs">Interns submit daily attendance, clock-in records, and logbooks through the web application.</div>
+                                        </div>
+                                    </div>
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">2</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Validation & Approval</div>
+                                            <div class="workflow-desc text-xs">The system validates attendance records, prevents duplicate submissions, and manages mentor approval workflows.</div>
+                                        </div>
+                                    </div>
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">3</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Automated Processing</div>
+                                            <div class="workflow-desc text-xs">Automatically generates attendance recaps, monthly payroll summaries, and internship reports.</div>
+                                        </div>
+                                    </div>
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">4</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Dashboard & Reporting</div>
+                                            <div class="workflow-desc text-xs">Provides real-time intern monitoring, attendance tracking, and one-click payroll report generation.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-sm mt-2"><strong class="text-cyan">Impact:</strong> Reduced manual administrative processing time by 98%.</p>
+                                <p class="text-sm mb-2"><strong class="text-yellow">Tools:</strong> Google Apps Script, HTML, CSS, JavaScript, Google Sheets</p>
+                                <button class="arcade-btn border-pink mt-2" onclick='openGallery([{"src":"assets/experience/borwita-attendance.mp4", "type":"video", "caption":"Internship System Demo"}])'>[ WATCH VIDEO ]</button>
+                            </div>
+                            <!-- Talent Management System -->
+                            <div class="nested-card web-dev">
+                                <h5 class="text-pink">Talent Management System (TMS)</h5>
+                                <p class="text-sm"><strong class="text-pink">Overview:</strong> A web-based Talent Management System that centralizes vacancy requests, candidate recommendations, interview documentation, and succession planning into a single platform. The system automatically recommends the most suitable internal candidates for each vacancy using configurable priority matching criteria, eliminating manual spreadsheet searches and fragmented workflows.</p>
+
+                                <p class="text-sm mt-4 mb-2"><strong class="text-orange">System Workflow:</strong></p>
+                                <div class="workflow-container" style="transform: scale(0.9); transform-origin: left top; margin-bottom: -10px;">
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">1</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Vacancy Request</div>
+                                            <div class="workflow-desc text-xs">HR receives an internal hiring request, and the vacancy is automatically displayed on the main dashboard.</div>
+                                        </div>
+                                    </div>
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">2</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Candidate Recommendation</div>
+                                            <div class="workflow-desc text-xs">The system retrieves employee master data and automatically recommends the most suitable internal candidates based on configurable priority matching criteria.</div>
+                                        </div>
+                                    </div>
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">3</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Interview & Successor Management</div>
+                                            <div class="workflow-desc text-xs">HR records interview schedules, evaluation results, successor decisions, and recruitment progress directly within the same platform.</div>
+                                        </div>
+                                    </div>
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">4</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Dashboard & Monitoring</div>
+                                            <div class="workflow-desc text-xs">Interactive dashboards monitor vacancy status, candidate pipelines, interview progress, and succession planning to support faster HR decision-making.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-sm mt-2">
+                                    <strong class="text-cyan">Key Features:</strong>
+                                    <ul class="pacman-bullets" style="margin-top: 10px; padding-left: 20px;">
+                                        <li>Automated internal candidate recommendation using configurable priority matching.</li>
+                                        <li>Centralized vacancy request and recruitment tracking.</li>
+                                        <li>Interview scheduling, documentation, and evaluation management.</li>
+                                        <li>Successor nomination and talent monitoring.</li>
+                                        <li>Master data configuration for customizable matching criteria.</li>
+                                    </ul>
+                                </div>
+                                <p class="text-sm mt-4"><strong class="text-cyan">Impact:</strong> Reduced manual spreadsheet searching and eliminated the need to switch between multiple platforms by integrating candidate recommendation, interview documentation, and talent monitoring into a single web-based system.</p>
+                                <p class="text-sm mb-2"><strong class="text-yellow">Tools:</strong> Google Apps Script, HTML, CSS, JavaScript, Google Sheets, Vercel</p>
+                                <button class="arcade-btn border-pink mt-2" onclick='openGallery([{"src":"assets/experience/borwita-talent.mp4", "type":"video", "caption":"Talent Management Demo"}])'>[ WATCH VIDEO ]</button>
+                            </div>
+                            <!-- Employee Engagement Analysis Project -->
+                            <div class="nested-card machine-learning">
+                                <h5 class="text-pink">Employee Engagement Analysis Project</h5>
+                                <p class="text-sm"><strong class="text-pink">Overview:</strong> Conducted an employee engagement analysis on 2,454 employees using clustering and machine learning techniques to identify engagement segments and provide data-driven recommendations for improving employee experience.</p>
+                                <p class="text-sm mt-4 mb-2"><strong class="text-orange">Workflow:</strong></p>
+                                <div class="workflow-container" style="transform: scale(0.9); transform-origin: left top; margin-bottom: -10px;">
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">1</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Data Preparation</div>
+                                            <div class="workflow-desc text-xs">Employee Data & Data Preprocessing</div>
+                                        </div>
+                                    </div>
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">2</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Segmentation</div>
+                                            <div class="workflow-desc text-xs">K-Means Clustering</div>
+                                        </div>
+                                    </div>
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">3</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Driver Analysis</div>
+                                            <div class="workflow-desc text-xs">Random Forest & SHAP Validation &rarr; Importance Performance Analysis (IPA)</div>
+                                        </div>
+                                    </div>
+                                    <div class="workflow-step">
+                                        <div class="workflow-icon" style="width:25px; height:25px; line-height:25px; font-size:12px;">4</div>
+                                        <div class="workflow-text-content">
+                                            <div class="workflow-title text-sm">Feedback Extraction</div>
+                                            <div class="workflow-desc text-xs">BERTopic Analysis &rarr; Business Recommendations</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-sm mt-2">
+                                    <strong class="text-cyan">Key Insights:</strong>
+                                    <ul class="pacman-bullets" style="margin-top: 10px; padding-left: 20px;">
+                                        <li>Analyzed engagement data from 2,454 employees based on the Aon Hewitt Employee Engagement Model.</li>
+                                        <li>Identified 3 employee engagement segments using K-Means Clustering.</li>
+                                        <li>Determined key engagement drivers using Random Forest and SHAP, then prioritized improvement initiatives through IPA.</li>
+                                        <li>Extracted employee feedback themes using BERTopic to support actionable HR recommendations.</li>
+                                    </ul>
+                                </div>
+                                <p class="text-sm mb-2 mt-4"><strong class="text-yellow">Tools:</strong> Python, Pandas, Scikit-learn, SHAP, BERTopic, UMAP, HDBSCAN, Matplotlib, Microsoft Excel, Jupyter Notebook</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PLN Experience -->
+                <div class="timeline-item pixel-box border-orange">
+                    <div class="timeline-header" onclick="toggleDetails(this)">
+                        <div class="timeline-title-area">
+                            <span class="badge border-pink text-pink">[ INTERNSHIP ]</span>
+                            <h3 class="text-yellow mt-2">PT PLN Nusantara Power</h3>
+                            <h4 class="text-cyan">Corporate Reporting | GCG</h4>
+                            <span class="date text-pink">Jan 2025 - Feb 2025</span>
+                        </div>
+                        <div class="expand-icon text-orange">▼</div>
+                    </div>
+                    <div class="timeline-details hidden">
+                        <div class="overview-box">
+                            <p><strong class="text-pink">Overview:</strong> Supported Annual Report, Sustainability Report, and PLN NP Statistics Report preparation through large-scale data validation and reporting activities.</p>
+                        </div>
+                        <h4 class="text-yellow mt-4 mb-2">KEY ACTIVITY</h4>
+                        <ul class="pacman-bullets text-sm">
+                            <li>Data validation & consistency checking for 1,000+ reporting data points.</li>
+                            <li>Formula and logic verification across 20+ corporate indicators.</li>
+                            <li>Reporting data consolidation and inconsistency resolution.</li>
+                        </ul>
+                        <button class="arcade-btn border-orange mt-4" onclick='openGallery([{"src":"assets/experience/pln-doc-1.jpg", "caption":"PLN Data Validation Documentation"}])'>[ VIEW DOCUMENTATION ]</button>
+                    </div>
+                </div>
+
+                <!-- Assistant Lecturer SQC -->
+                <div class="timeline-item pixel-box border-orange">
+                    <div class="timeline-header" onclick="toggleDetails(this)">
+                        <div class="timeline-title-area">
+                            <span class="badge border-yellow text-yellow">[ ASSISTANT LECTURER ]</span>
+                            <h3 class="text-yellow mt-2">Institut Teknologi Sepuluh Nopember</h3>
+                            <h4 class="text-cyan">Statistical Quality Control</h4>
+                            <span class="date text-pink">Mar 2025 - Jun 2025</span>
+                        </div>
+                        <div class="expand-icon text-orange">▼</div>
+                    </div>
+                    <div class="timeline-details hidden">
+                        <ul class="pacman-bullets text-sm mt-2">
+                            <li>Facilitated laboratory sessions for <strong>30+ students</strong> per class covering control charts, process capability analysis, and acceptance sampling using Excel and Minitab.</li>
+                            <li>Contributed to average practical assessment scores <strong>above 80/100</strong>.</li>
+                        </ul>
+                        <button class="arcade-btn border-yellow mt-4" onclick='openGallery([{"src":"assets/experience/sqc.jpeg", "caption":"SQC Lab Session"}, {"src":"assets/experience/sqc (2).jpeg", "caption":"SQC Documentation"}])'>[ VIEW DOCUMENTATION ]</button>
+                    </div>
+                </div>
+
+                <!-- Assistant Lecturer ED -->
+                <div class="timeline-item pixel-box border-orange">
+                    <div class="timeline-header" onclick="toggleDetails(this)">
+                        <div class="timeline-title-area">
+                            <span class="badge border-yellow text-yellow">[ ASSISTANT LECTURER ]</span>
+                            <h3 class="text-yellow mt-2">Institut Teknologi Sepuluh Nopember</h3>
+                            <h4 class="text-cyan">Experimental Design</h4>
+                            <span class="date text-pink">Sep 2024 - Dec 2024</span>
+                        </div>
+                        <div class="expand-icon text-orange">▼</div>
+                    </div>
+                    <div class="timeline-details hidden">
+                        <ul class="pacman-bullets text-sm mt-2">
+                            <li>Facilitated laboratory sessions for <strong>30+ students</strong> per class covering Completely Randomized Design (CRD), Randomized Complete Block Design (RCBD), ANOVA, and hypothesis testing using Excel and Minitab.</li>
+                            <li>Contributed to average practical assessment scores <strong>above 80/100</strong>.</li>
+                        </ul>
+                        <button class="arcade-btn border-yellow mt-4" onclick='openGallery([{"src":"assets/experience/ed.jpeg", "caption":"ED Lab Session"}])'>[ VIEW DOCUMENTATION ]</button>
+                    </div>
+                </div>
+
+                <!-- Organization HIMADATA -->
+                <div class="timeline-item pixel-box border-orange">
+                    <div class="timeline-header" onclick="toggleDetails(this)">
+                        <div class="timeline-title-area">
+                            <span class="badge border-cyan text-cyan">[ ORGANIZATION ]</span>
+                            <h3 class="text-yellow mt-2">HIMADATA - ITS</h3>
+                            <h4 class="text-cyan">Head of Advocacy & Student Welfare</h4>
+                            <span class="date text-pink">Jan 2025 - Dec 2025</span>
+                        </div>
+                        <div class="expand-icon text-orange">▼</div>
+                    </div>
+                    <div class="timeline-details hidden">
+                        <p class="text-sm text-justify mt-2">Led the Advocacy and Student Welfare Division, coordinating a team of 3 members to deliver academic support and student welfare initiatives for Business Statistics students.</p>
+                        <p class="text-xs text-pink mt-2 font-bold">Key Contributions:</p>
+                        <ul class="pacman-bullets text-sm ml-2 mt-1">
+                            <li>Organized a Scholarship Preparation Webinar attended by 100+ students, resulting in 15% scholarship applicants, exceeding the 10% target.</li>
+                            <li>Managed a 10-session exam preparation program with 300+ total participants, achieving a <strong>98.1% satisfaction rate</strong>.</li>
+                            <li>Developed academic support initiatives, including the Academic Bank and Student Feedback Form, to enhance access to learning resources and strengthen communication between students and the department.</li>
+                        </ul>
+
+                        <h4 class="text-cyan mb-1 mt-4">Staff of Advocacy and Student Welfare</h4>
+                        <span class="date text-pink text-sm">Mar 2024 - Dec 2024</span>
+                        <p class="text-sm text-justify mt-1">Supported student welfare initiatives and communication programs to enhance academic support and student engagement within the Business Statistics Department.</p>
+                        <p class="text-xs text-pink mt-2 font-bold">Key Contributions:</p>
+                        <ul class="pacman-bullets text-sm ml-2 mt-1">
+                            <li>Managed the Student Feedback Form for 300+ students, facilitating the collection of academic concerns and feedback.</li>
+                            <li>Recognized as <strong>Best Staff</strong> with a performance evaluation score of 83/100.</li>
+                        </ul>
+
+                        <button class="arcade-btn border-cyan mt-4" onclick='openGallery([
+                            {"src":"assets/organization/hima (6).jpeg", "caption":"HIMADATA Activity"},
+{"src":"assets/organization/hima (1).jpeg", "caption":"HIMADATA Activity"},
+{"src":"assets/organization/hima (2).jpeg", "caption":"HIMADATA Activity"},
+{"src":"assets/organization/hima (3).jpeg", "caption":"HIMADATA Activity"},
+{"src":"assets/organization/hima (4).jpeg", "caption":"HIMADATA Activity"},
+{"src":"assets/organization/hima (5).jpeg", "caption":"HIMADATA Activity"}
+                        ])'>[ VIEW DOCUMENTATION ]</button>
+                    </div>
+                </div>
+
+                <!-- Secretarial Generasi Integralistik -->
+                <div class="timeline-item pixel-box border-orange">
+                    <div class="timeline-header" onclick="toggleDetails(this)">
+                        <div class="timeline-title-area">
+                            <span class="badge border-cyan text-cyan">[ ORGANIZATION ]</span>
+                            <h3 class="text-yellow mt-2">Generasi Integralistik (Gerigi ITS)</h3>
+                            <h4 class="text-cyan">Secretarial</h4>
+                            <span class="date text-pink">Jul 2023 - Aug 2023</span>
+                        </div>
+                        <div class="expand-icon text-orange">▼</div>
+                    </div>
+                    <div class="timeline-details hidden">
+                        <p class="text-sm text-justify mt-2">Mentored and guided a group of 20+ freshmen throughout the university orientation program, supporting their adaptation to academic and campus life.</p>
+                        <p class="text-xs text-pink mt-2 font-bold">Key Contributions:</p>
+                        <ul class="pacman-bullets text-sm mt-2">
+                            <li>Managed participant administrative and emergency contact records.</li>
+                            <li>Introduced campus resources, academic procedures, and student life.</li>
+                            <li>Monitored participant engagement and served as the primary point of contact during orientation activities.</li>
+                        </ul>
+                        <button class="arcade-btn border-cyan mt-4" onclick='openGallery([
+                            {"src":"assets/organization/gerigi 1 (1).JPG", "caption":"Gerigi ITS Activity"},
+                            {"src":"assets/organization/gerigi 1 (2).JPG", "caption":"Gerigi ITS Activity"},
+                            {"src":"assets/organization/gerigi 1 (3).JPG", "caption":"Gerigi ITS Activity"},
+                            {"src":"assets/organization/gerigi 1 (4).JPG", "caption":"Gerigi ITS Activity"}
+                        ])'>[ VIEW DOCUMENTATION ]</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Project Section -->
+        <section id="project" class="screen">
+            <h2 class="section-title text-cyan">PROJECTS</h2>
+            
+            <!-- Main Project Filter Tabs -->
+            <div class="project-filters mb-4">
+                <button class="filter-btn active" onclick="filterProjects('all')">ALL</button>
+                <button class="filter-btn" onclick="filterProjects('da')">DATA ANALYSIS</button>
+                <button class="filter-btn" onclick="filterProjects('dv')">DATA VISUALIZATION</button>
+                <button class="filter-btn" onclick="filterProjects('ml')">MACHINE LEARNING</button>
+            </div>
+
+            <div class="project-grid" id="main-project-grid">
+                
+                <!-- Sales & Inventory DSS -->
+                <div class="project-card pixel-box border-cyan" data-category="da" onclick="openModal('modal-sales')">
+                    <div class="project-content">
+                        <img src="assets/projects/salesinv.jpg" style="width:100%; height:150px; object-fit:cover; border-radius:4px; margin-bottom:10px; border:1px solid var(--inky-cyan);">
+                        <h3 class="text-yellow">Sales & Inventory DSS</h3>
+                        <p>Data-driven Decision Support System using SQL, Python, and Power BI.</p>
+                        <div class="tech-stack text-pink mt-2">SQL, Python, Power BI</div>
+                        <span class="click-hint text-cyan blink mt-2">CLICK FOR DETAILS</span>
+                    </div>
+                </div>
+
+                <!-- Food Service Sales -->
+                <div class="project-card pixel-box border-cyan" data-category="da" onclick="openModal('modal-food')">
+                    <div class="project-content">
+                        <img src="assets/projects/foodservice.jpg" style="width:100%; height:150px; object-fit:cover; border-radius:4px; margin-bottom:10px; border:1px solid var(--inky-cyan);">
+                        <h3 class="text-yellow">Food Service Sales</h3>
+                        <p>End-to-end Decision Support System using SQL, Python, and Power BI.</p>
+                        <div class="tech-stack text-pink mt-2">Power BI, SQL, Python</div>
+                        <span class="click-hint text-cyan blink mt-2">CLICK FOR DETAILS</span>
+                    </div>
+                </div>
+
+                <!-- HR Dashboard -->
+                <div class="project-card pixel-box border-cyan" data-category="dv" onclick="openModal('modal-hr')">
+                    <div class="project-content">
+                        <img src="assets/projects/hr-dashboard.jpg" style="width:100%; height:150px; object-fit:cover; border-radius:4px; margin-bottom:10px; border:1px solid var(--inky-cyan);">
+                        <h3 class="text-yellow">HR Dashboard</h3>
+                        <p>Provides overview of workforce metrics including headcount and attrition.</p>
+                        <div class="tech-stack text-pink mt-2">Looker Studio</div>
+                        <span class="click-hint text-cyan blink mt-2">CLICK FOR DETAILS</span>
+                    </div>
+                </div>
+
+                <!-- Sales Dashboard -->
+                <div class="project-card pixel-box border-cyan" data-category="dv" onclick="openModal('modal-salesdash')">
+                    <div class="project-content">
+                        <img src="assets/projects/sales-dashboard.jpg" style="width:100%; height:150px; object-fit:cover; border-radius:4px; margin-bottom:10px; border:1px solid var(--inky-cyan);">
+                        <h3 class="text-yellow">Sales Dashboard</h3>
+                        <p>Revenue & Customer Overview with Power BI.</p>
+                        <div class="tech-stack text-pink mt-2">Power BI</div>
+                        <span class="click-hint text-cyan blink mt-2">CLICK FOR DETAILS</span>
+                    </div>
+                </div>
+
+                <!-- Netflix Dashboard -->
+                <div class="project-card pixel-box border-cyan" data-category="dv" onclick="openModal('modal-netflix')">
+                    <div class="project-content">
+                        <img src="assets/projects/netflix.jpg" style="width:100%; height:150px; object-fit:cover; border-radius:4px; margin-bottom:10px; border:1px solid var(--inky-cyan);">
+                        <h3 class="text-yellow">Netflix Dashboard</h3>
+                        <p>Data visualization for Netflix content distribution.</p>
+                        <div class="tech-stack text-pink mt-2">Tableau</div>
+                        <span class="click-hint text-cyan blink mt-2">CLICK FOR DETAILS</span>
+                    </div>
+                </div>
+
+                <!-- Hotel Review -->
+                <div class="project-card pixel-box border-cyan" data-category="da ml" onclick="openModal('modal-hotel')">
+                    <div class="project-content">
+                        <img src="assets/projects/hotelreview.jpg" style="width:100%; height:150px; object-fit:cover; border-radius:4px; margin-bottom:10px; border:1px solid var(--inky-cyan);">
+                        <h3 class="text-yellow">Hotel Review Topic Modeling</h3>
+                        <p>Using BERTopic and LDA to uncover customer preferences.</p>
+                        <div class="tech-stack text-pink mt-2">Python, ML</div>
+                        <span class="click-hint text-cyan blink mt-2">CLICK FOR DETAILS</span>
+                    </div>
+                </div>
+
+                <!-- Stock Price -->
+                <div class="project-card pixel-box border-cyan" data-category="da ml" onclick="openModal('modal-stock')">
+                    <div class="project-content">
+                        <img src="assets/projects/stock.jpg" style="width:100%; height:150px; object-fit:cover; border-radius:4px; margin-bottom:10px; border:1px solid var(--inky-cyan);">
+                        <h3 class="text-yellow">Stock Price Forecasting</h3>
+                        <p>Factor Analysis and forecasting of TLKM, JSMR, and UNVR.</p>
+                        <div class="tech-stack text-pink mt-2">R, EViews</div>
+                        <span class="click-hint text-cyan blink mt-2">CLICK FOR DETAILS</span>
+                    </div>
+                </div>
+
+                <!-- Portfolio Optimization -->
+                <div class="project-card pixel-box border-cyan" data-category="dv ml" onclick="openModal('modal-portfolio')">
+                    <div class="project-content">
+                            <img src="assets/projects/portfolio.jpg" style="width:100%; height:150px; object-fit:cover; border-radius:4px; margin-bottom:10px; border:1px solid var(--inky-cyan);" onerror="this.style.display='none'">
+                            <h3 class="text-yellow">Portfolio Optimization</h3>
+                        <p>Interactive optimization dashboard using CCMV model & ABC algorithm.</p>
+                        <div class="tech-stack text-pink mt-2">Python, Streamlit</div>
+                        <span class="click-hint text-cyan blink mt-2">CLICK FOR DETAILS</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Project Modals -->
+        <div id="modal-overlay" class="modal-overlay hidden" onclick="closeModals()"></div>
+
+                <!-- Modal: Sales & Inventory DSS -->
+        <div id="modal-sales" class="project-modal pixel-box border-yellow hidden">
+            <button class="close-btn text-red" onclick="closeModals()">[ X ]</button>
+            <h2 class="text-yellow mb-2">Sales & Inventory Decision Support System</h2>
+            
+            <p><strong class="text-pink">Overview:</strong> This case study simulates a nationwide motorcycle dealership network operating multiple branches across different provinces. Build a data-driven Decision Support System that helps management answer: which branches are underperforming, which products need restocking, and what demand looks like in the months ahead.</p>
+            
+            <h3 class="text-pink mt-4 mb-2">WORKFLOW</h3>
+            <div class="workflow-container">
+                <div class="workflow-step">
+                    <div class="workflow-icon">1</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Database Design (SQL)</div>
+                        <div class="workflow-desc">Designed a star schema and generated 31,447 simulated transactions. Delivered SQLite and MySQL DDL.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">2</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Business Analysis (SQL)</div>
+                        <div class="workflow-desc">Analyzed product sales, margin, turnover, and stockout branches.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">3</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Forecasting & Anomaly (Python)</div>
+                        <div class="workflow-desc">Forecasted 3-month demand, computed safety stock, flagged anomalies.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">4</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Dashboard (Power BI)</div>
+                        <div class="workflow-desc">Built 5-page interactive dashboard (Summary, Branch, Inventory, Forecast, Recommendation).</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-pink mt-4 mb-2">KEY INSIGHTS</h3>
+            <ul class="text-sm ml-4" style="list-style-type: square; color: #fff;">
+                <li>Total achievement sits at 96.78% of target. Revenue and forecasted demand show an upward trend.</li>
+                <li>Jakarta Barat leads in absolute revenue (102.87%). Surabaya has the lowest achievement rate (93.52%).</li>
+                <li>The Oli & Cairan category carries the highest average stock level, signaling excess inventory risk.</li>
+                <li>High-volume sparepart items show the largest forecast quantities and sit below reorder point.</li>
+                <li>Surabaya's -64.3% sales anomaly paired with continued high restocking, and Jakarta Barat's +93.6% demand spike paired with insufficient restocking are the clearest cases to act on.</li>
+            </ul>
+            <p class="mt-4 mb-4 text-xs text-center"><span class="text-yellow">TOOLS:</span> Excel · SQL (MySQL) · Python · Power BI</p>
+            <a href="https://drive.google.com/drive/folders/1G4tJP1MfUqLiJI5cRBzt9OSatUFEafm-?usp=sharing" target="_blank" class="arcade-btn border-yellow block text-center">[ VIEW PROJECT FOLDER ]</a>
+        </div>
+
+                                                <!-- Modal: Food Service Sales -->
+        <div id="modal-food" class="project-modal pixel-box border-pink hidden">
+            <button class="close-btn text-red" onclick="closeModals()">[ X ]</button>
+            <h2 class="text-yellow mb-2">Food Service Sales Analytics</h2>
+            <p class="text-xs text-pink mb-4">FMCG distributor performance & customer retention — Excel · SQL · Python · Power BI</p>
+            
+            <p><strong class="text-pink">Overview:</strong> FMCG distributors sell through hundreds of Food Service customers across multiple regions and channels, making it hard to spot which customers, products, or branches actually drive profit versus just volume. This project turns raw multi-table transactional data into a data-driven Decision Support tool: a relational database layer, automated pattern-detection, and an interactive Power BI dashboard that lets management track performance, spot revenue concentration risk, and identify churning customers.</p>
+
+            <h3 class="text-pink mt-4 mb-2">KEY METRICS</h3>
+            <ul class="pacman-bullets text-sm ml-2" style="margin-bottom: 20px;">
+                <li><strong>6,000+</strong> Sales transactions analyzed</li>
+                <li><strong>300</strong> Customers / <strong>15</strong> Distributors / <strong>80</strong> Products / <strong>50</strong> Salesmen tracked</li>
+                <li><strong>7</strong> SQL business queries built (JOIN + GROUP BY)</li>
+                <li><strong>4</strong> Months auto-flagged with a >20% sales drop (anomaly detection)</li>
+                <li><strong>18.1% &rarr; 17.9%</strong> YoY profit margin trend, despite sales growth</li>
+                <li><strong>~273 days</strong> Average recency for the "Lost Customers" RFM segment</li>
+                <li><strong>4-page</strong> Interactive Power BI dashboard</li>
+            </ul>
+
+            <h3 class="text-orange mt-4 mb-2">DATA PIPELINE WORKFLOW</h3>
+            <div class="workflow-container">
+                <div class="workflow-step">
+                    <div class="workflow-icon">1</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Data Preparation (Excel)</div>
+                        <div class="workflow-desc">Consolidated 6 raw source tables (Fact_Sales, Distributor_Master, etc.) totaling 6,000+ rows. Standardized IDs, corrected dates, removed blanks.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">2</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Database Build & Query (SQL)</div>
+                        <div class="workflow-desc">Built table structure in MySQL, imported cleaned CSVs, wrote 7 targeted analytical queries using JOIN and GROUP BY to answer specific business questions.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">3</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Pattern & Anomaly Detection (Python)</div>
+                        <div class="workflow-desc">Built a script to trend monthly net sales and flag any month with a sales drop >20% vs. previous month, surfacing 4 anomaly months.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">4</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Dashboard & Segmentation (Power BI)</div>
+                        <div class="workflow-desc">Built 4-page interactive dashboard. Applied Pareto (80/20) analysis and RFM segmentation to classify customer value and churn risk.</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-cyan mt-4 mb-2">KEY INSIGHTS</h3>
+            <ul class="text-sm ml-4" style="list-style-type: square; color: #fff;">
+                <li>Revenue is concentrated in a small group of top customers — a concentration risk worth ongoing monitoring.</li>
+                <li>Sales grew from 2024 to 2025, but profit margin slightly declined from 18.1% to 17.9% — growth is not translating fully into profitability.</li>
+                <li>Retail Tradisional and Horeka are the most profitable channels by margin, not by volume — a distinction the volume-only view would miss.</li>
+                <li>Champions drive the most sales value, while Lost Customers show ~273 days average recency — a clear, quantifiable churn-risk segment to act on.</li>
+                <li>Salesperson performance varies meaningfully across two axes (volume and margin) — making a simple "top seller" ranking insufficient.</li>
+            </ul>
+
+            <p class="mt-4 mb-4 text-xs text-center"><strong class="text-yellow">TOOLS:</strong> Excel · SQL (MySQL) · Python · Power BI</p>
+            <a href="https://drive.google.com/drive/folders/1zuc626wit8uFOqaS6lHB8sQRbN1HEmBY?usp=sharing" target="_blank" class="arcade-btn border-pink block text-center">[ VIEW PROJECT FOLDER ]</a>
+        </div>
+
+        <!-- Modal: HR Dashboard -->
+        <div id="modal-hr" class="project-modal pixel-box border-cyan hidden">
+            <button class="close-btn text-red" onclick="closeModals()">[ X ]</button>
+            <h2 class="text-yellow mb-2">HR Dashboard — Executive Overview</h2>
+            <p><strong class="text-pink">Overview:</strong> Provides a comprehensive overview of workforce metrics, including headcount, attrition, employee demographics, and workforce distribution to support HR decision-making.</p>
+            
+            <h3 class="text-pink mt-4 mb-2">WORKFLOW</h3>
+            <div class="workflow-container">
+                <div class="workflow-step">
+                    <div class="workflow-icon">1</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Extract</div>
+                        <div class="workflow-desc">Extract employee data (headcount, attrition, department, demographics) from HRIS/Excel.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">2</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Clean</div>
+                        <div class="workflow-desc">Clean and structure the data (handle missing values, standardize categories).</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">3</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Build KPI</div>
+                        <div class="workflow-desc">Build KPI measures: headcount, attrition count, attrition rate.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">4</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Design Layout</div>
+                        <div class="workflow-desc">Design the dashboard layout: Executive Overview, Attrition, Demographics.</div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mt-2"><strong class="text-cyan">Key Insight:</strong> Identified attrition patterns across job roles, tenure, and salary levels. Monitored workforce demographics and organizational composition. Supported data-driven workforce planning and retention strategies.</p>
+            <p class="mt-2 text-xs"><span class="text-yellow">TOOLS:</span> Looker Studio</p>
+            <a href="https://datastudio.google.com/u/0/reporting/7dc8af70-7f80-4cbd-8dc9-902cf8bead97/page/p_18y5i178wd" target="_blank" class="arcade-btn border-cyan mt-4 block text-center">[ VIEW DASHBOARD ]</a>
+        </div>
+
+                <!-- Modal: Sales Dashboard -->
+        <div id="modal-salesdash" class="project-modal pixel-box border-red hidden">
+            <button class="close-btn text-red" onclick="closeModals()">[ X ]</button>
+            <h2 class="text-yellow mb-2">Sales Dashboard — Revenue & Customer Overview</h2>
+            <p><strong class="text-pink">Overview:</strong> Visualizes sales performance through revenue trends, product performance, customer insights, and regional analysis to support data-driven business decision-making.</p>
+            
+            <h3 class="text-pink mt-4 mb-2">WORKFLOW</h3>
+            <div class="workflow-container">
+                <div class="workflow-step">
+                    <div class="workflow-icon">1</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Extract</div>
+                        <div class="workflow-desc">Extract order-level sales data (date, product, quantity, price, customer, region).</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">2</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Clean & Model</div>
+                        <div class="workflow-desc">Clean and model the data into a simple fact-dimension structure.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">3</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Build KPI</div>
+                        <div class="workflow-desc">Build KPI measures: revenue, quantity sold, sales by product/deal size.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">4</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Design Layout</div>
+                        <div class="workflow-desc">Design the dashboard layout: Sales Trend, Product Performance, Customer Ranking.</div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mt-2"><strong class="text-cyan">Key Insight:</strong> Classic Cars generated the highest sales revenue. Medium-sized deals contributed nearly 60% of total sales revenue. The USA recorded the highest sales, with Madrid and New York City leading. Euro Shopping Channel was the highest-contributing customer.</p>
+            <p class="mt-2 text-xs"><span class="text-yellow">TOOLS:</span> Power BI</p>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiNDQyYWZkODQtYzJiZS00YTllLTljMjMtZGRhMDliODUwMGMyIiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D" target="_blank" class="arcade-btn border-red mt-4 block text-center">[ VIEW DASHBOARD ]</a>
+        </div>
+
+        <!-- Modal: Netflix Dashboard -->
+        <div id="modal-netflix" class="project-modal pixel-box border-orange hidden">
+            <button class="close-btn text-red" onclick="closeModals()">[ X ]</button>
+            <h2 class="text-yellow mb-2">Netflix Dashboard — Catalog Overview</h2>
+            
+            <p><strong class="text-pink">Overview:</strong> Analyzes Netflix content distribution by content type, genre, country, ratings, and release trends to uncover patterns in the streaming catalog.</p>
+            <p class="mt-2"><strong class="text-orange">Workflow:</strong></p>
+            <div class="workflow-container">
+                    <div class="workflow-step">
+                        <div class="workflow-icon">1</div>
+                        <div class="workflow-text-content">
+                            <div class="workflow-title">Extract</div>
+                            <div class="workflow-desc">Extract Netflix catalog dataset from source.</div>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="workflow-icon">2</div>
+                        <div class="workflow-text-content">
+                            <div class="workflow-title">Clean & Model</div>
+                            <div class="workflow-desc">Clean missing values and split multi-value fields (genres, cast).</div>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="workflow-icon">3</div>
+                        <div class="workflow-text-content">
+                            <div class="workflow-title">Build KPI</div>
+                            <div class="workflow-desc">Build calculated fields for content distribution & trends.</div>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="workflow-icon">4</div>
+                        <div class="workflow-text-content">
+                            <div class="workflow-title">Design Layout</div>
+                            <div class="workflow-desc">Design dashboard layout: Content Split, Global Map, Rating Analysis.</div>
+                        </div>
+                    </div>
+                </div>
+            <p class="mt-2"><strong class="text-cyan">Key Insight:</strong> Movies dominate the catalog; the United States contributes the largest share of titles.</p>
+            <p class="mt-2"><strong class="text-yellow">Tools:</strong> Tableau</p>
+            <button class="arcade-btn border-orange mt-4 block text-center" style="width:100%;" onclick='openGallery([{"src":"assets/projects/netflix.jpg", "caption":"Netflix Dashboard Preview"}])'>[ PREVIEW ]</button>
+        </div>
+
+        <!-- Modal: Hotel Review -->
+        <div id="modal-hotel" class="project-modal pixel-box border-green hidden">
+            <button class="close-btn text-red" onclick="closeModals()">[ X ]</button>
+            <h2 class="text-yellow mb-2">Hotel Review Topic Modelling (BERTopic vs LDA)</h2>
+            <p><strong class="text-pink">Overview:</strong> Extract the dominant themes in customer reviews of My Tower Hotel Surabaya to support hotel management in prioritizing service improvements.</p>
+            <p class="mt-2"><strong class="text-orange">Workflow:</strong></p>
+            <div class="workflow-container">
+                <div class="workflow-step">
+                    <div class="workflow-icon">1</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Pre-processing</div>
+                        <div class="workflow-desc">Case folding, tokenizing, stopword removal.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">2</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">DTM</div>
+                        <div class="workflow-desc">Document Term Matrix construction.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">3</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Exploratory</div>
+                        <div class="workflow-desc">Exploratory wordcloud analysis.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">4</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Topic Modelling</div>
+                        <div class="workflow-desc">Topic modelling using LDA and BERTopic.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">5</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Evaluation</div>
+                        <div class="workflow-desc">Model evaluation via coherence score and visualization.</div>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-2"><strong class="text-cyan">Key Insight:</strong> Room cleanliness and comfort is the dominant theme for reputation management.</p>
+            <p class="mt-2"><strong class="text-yellow">Tools:</strong> Python (Sastrawi, LDA, BERTopic)</p>
+            <a href="https://drive.google.com/file/d/1R01KPGXg09ItCXf9h7w2UH0rJsN9Xm5P/view?usp=sharing" target="_blank" class="arcade-btn border-green mt-4 block text-center" style="display:block;">[ VIEW PROJECT FOLDER ]</a>
+        </div>
+
+        <!-- Modal: Stock Price -->
+        <div id="modal-stock" class="project-modal pixel-box border-yellow hidden">
+            <button class="close-btn text-red" onclick="closeModals()">[ X ]</button>
+            <h2 class="text-yellow mb-2">Stock Price Forecasting & Factor Modelling</h2>
+            <p><strong class="text-pink">Overview:</strong> Select the best-performing emiten from the SRI-KEHATI index, forecast their stock prices, and model which macroeconomic/sectoral factors drive their price movements.</p>
+            <p class="mt-2"><strong class="text-orange">Workflow:</strong></p>
+            <div class="workflow-container">
+                <div class="workflow-step">
+                    <div class="workflow-icon">1</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Selection</div>
+                        <div class="workflow-desc">Emiten selection using K-Means clustering.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">2</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Forecasting</div>
+                        <div class="workflow-desc">Price forecasting using SES (best method).</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">3</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Modelling</div>
+                        <div class="workflow-desc">Factor modelling via Error Correction Model (ECM).</div>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-2"><strong class="text-cyan">Key Insight:</strong> SES was the best forecasting method. ECM identified Exchange rate and lagged error as significant drivers.</p>
+            <p class="mt-2"><strong class="text-yellow">Tools:</strong> K-Means, Time-series forecasting, ECM</p>
+            <a href="https://drive.google.com/file/d/1ssoa0GprzRYhiX98Mq6r1YFhvsA6SGOs/view?usp=sharing" target="_blank" class="arcade-btn border-yellow mt-4 block text-center" style="display:block;">[ VIEW PROJECT FOLDER ]</a>
+        </div>
+        
+        <!-- Modal: Portfolio Optimization -->
+        <div id="modal-portfolio" class="project-modal pixel-box border-pink hidden">
+            <button class="close-btn text-red" onclick="closeModals()">[ X ]</button>
+            <h2 class="text-yellow mb-2">Portfolio Optimization</h2>
+            <p><strong class="text-pink">Overview:</strong> Developed an interactive portfolio optimization dashboard to assist investment decision-making using the CCMV model and ABC algorithm.</p>
+            <p class="mt-2"><strong class="text-cyan">Key Insight:</strong> Produced optimal portfolio recommendations based on user-defined parameters within the SRI-KEHATI Index.</p>
+            <p class="mt-2"><strong class="text-yellow">Tools:</strong> HTML, Google Colab, Streamlit, Artificial Bee Colony Algorithm</p>
+            <a href="https://optimasiabc.streamlit.app/" target="_blank" class="arcade-btn border-pink mt-4 block text-center" style="display:block;">[ VIEW LIVE APP ]</a>
+        </div>
+
+                <!-- Certification Section -->
+        <section id="certifications" class="screen flex flex-col justify-start items-center" style="padding-top: 80px; overflow-y: auto;">
+            <h2 class="section-title text-pink text-center w-full mb-6">CERTIFICATIONS & AWARDS</h2>
+            
+            <div class="w-full max-w-4xl" style="margin-bottom: 40px;">
+                <h3 class="text-cyan mb-4" style="border-bottom: 2px dashed var(--inky-cyan); padding-bottom: 10px; display: inline-block;">> CERTIFICATIONS</h3>
+                <div class="grid grid-cols-2 gap-4" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                    
+                    <!-- Certificate 1 -->
+                    <a href="https://www.dicoding.com/certificates/L4PQ9G81OPO1" target="_blank" class="pixel-box border-cyan transition-transform hover-scale block" style="padding:20px; transition: transform 0.2s; text-decoration: none;">
+                        <div class="text-yellow mb-2" style="font-family: \'Press Start 2P\', cursive; font-size: 12px; line-height: 1.6;">Data Science</div>
+                        <div class="text-sm" style="color:#fff;">Dicoding Indonesia</div>
+                        <div class="text-xs text-cyan mt-1">Valid until 2029</div>
+                        <div class="text-xs text-pink mt-3 blink">[ CLICK TO VIEW ]</div>
+                    </a>
+
+                    <!-- Certificate 2 -->
+                    <a href="https://www.dicoding.com/certificates/1RXYW69MQZVM" target="_blank" class="pixel-box border-pink transition-transform hover-scale block" style="padding:20px; transition: transform 0.2s; text-decoration: none;">
+                        <div class="text-yellow mb-2" style="font-family: \'Press Start 2P\', cursive; font-size: 12px; line-height: 1.6;">Structured Query Language (SQL)</div>
+                        <div class="text-sm" style="color:#fff;">Dicoding Indonesia</div>
+                        <div class="text-xs text-cyan mt-1">Valid until 2029</div>
+                        <div class="text-xs text-pink mt-3 blink">[ CLICK TO VIEW ]</div>
+                    </a>
+
+                    <!-- Certificate 3 -->
+                    <a href="https://www.dicoding.com/certificates/ERZRLENQ2ZYV" target="_blank" class="pixel-box border-yellow transition-transform hover-scale block" style="padding:20px; transition: transform 0.2s; text-decoration: none;">
+                        <div class="text-yellow mb-2" style="font-family: \'Press Start 2P\', cursive; font-size: 12px; line-height: 1.6;">Machine Learning</div>
+                        <div class="text-sm" style="color:#fff;">Dicoding Indonesia</div>
+                        <div class="text-xs text-cyan mt-1">Valid until 2029</div>
+                        <div class="text-xs text-pink mt-3 blink">[ CLICK TO VIEW ]</div>
+                    </a>
+
+                    <!-- Certificate 4 -->
+                    <div class="pixel-box border-green cursor-pointer transition-transform hover-scale" onclick='openGallery([{"src":"assets/certifications/english.jpg", "caption":"CEFR B2 Upper Intermediate English Level"}])' style="padding:20px; transition: transform 0.2s; cursor: pointer;">
+                        <div class="text-yellow mb-2" style="font-family: \'Press Start 2P\', cursive; font-size: 12px; line-height: 1.6;">CEFR B2 Upper Intermediate English Level</div>
+                        <div class="text-sm" style="color:#fff;">BC English Certificate</div>
+                        <div class="text-xs text-cyan mt-1">Valid from 2025</div>
+                        <div class="text-xs text-pink mt-3 blink">[ VIEW IMAGE ]</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full max-w-4xl" style="padding-bottom: 100px;">
+                <h3 class="text-orange mb-4" style="border-bottom: 2px dashed var(--clyde-orange); padding-bottom: 10px; display: inline-block;">> AWARDS & ACHIEVEMENTS</h3>
+                <div class="grid grid-cols-2 gap-4" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                    
+                    <!-- Award 1 -->
+                    <div class="pixel-box border-orange cursor-pointer transition-transform hover-scale" onclick='openGallery([{"src":"assets/certs/cert-bpc.jpg", "caption":"1st Runner-Up Seventseas BPC"}])' style="padding:20px; transition: transform 0.2s; cursor: pointer;">
+                        <div class="text-yellow mb-2" style="font-family: \'Press Start 2P\', cursive; font-size: 12px; line-height: 1.6;">1st Runner-Up Seventseas BPC</div>
+                        <div class="text-sm" style="color:#fff;">Universitas Brawijaya</div>
+                        <div class="text-xs text-cyan mt-1">Sep 2024</div>
+                        <div class="text-xs text-pink mt-3 blink">[ VIEW IMAGE ]</div>
+                    </div>
+
+                    <!-- Award 2 -->
+                    <div class="pixel-box border-red cursor-pointer transition-transform hover-scale" onclick='openGallery([{"src":"assets/certs/cert-pkmk.png", "caption":"Awardee of PKM-K 2024 Funding by Kemendikbudristek"}])' style="padding:20px; transition: transform 0.2s; cursor: pointer;">
+                        <div class="text-yellow mb-2" style="font-family: \'Press Start 2P\', cursive; font-size: 12px; line-height: 1.6;">Awardee of PKM-K 2024 Funding by Kemendikbudristek</div>
+                        <div class="text-sm" style="color:#fff;">Institut Teknologi Sepuluh Nopember</div>
+                        <div class="text-xs text-cyan mt-1">Apr 2024</div>
+                        <div class="text-xs text-pink mt-3 blink">[ VIEW IMAGE ]</div>
+                    </div>
+
+                    <!-- Award 3 -->
+                    <div class="pixel-box border-cyan cursor-pointer transition-transform hover-scale" onclick='openGallery([{"src":"assets/certifications/award_youth.jpg", "caption":"Awardee of ITS Youth Entrepreneurship Funding 2024"}])' style="padding:20px; transition: transform 0.2s; cursor: pointer;">
+                        <div class="text-yellow mb-2" style="font-family: \'Press Start 2P\', cursive; font-size: 12px; line-height: 1.6;">Awardee of ITS Youth Entrepreneurship Funding 2024</div>
+                        <div class="text-sm" style="color:#fff;">Institut Teknologi Sepuluh Nopember</div>
+                        <div class="text-xs text-cyan mt-1">Oct 2024</div>
+                        <div class="text-xs text-pink mt-3 blink">[ VIEW IMAGE ]</div>
+                    </div>
+
+                    <!-- Award 4 -->
+                    <div class="pixel-box border-pink cursor-pointer transition-transform hover-scale" onclick='openGallery([{"src":"assets/certifications/award_heti.jpg", "caption":"Awardee of HETI ADB ITS Funding 2025"}])' style="padding:20px; transition: transform 0.2s; cursor: pointer;">
+                        <div class="text-yellow mb-2" style="font-family: \'Press Start 2P\', cursive; font-size: 12px; line-height: 1.6;">Awardee of HETI ADB ITS Funding 2025</div>
+                        <div class="text-sm" style="color:#fff;">Institut Teknologi Sepuluh Nopember</div>
+                        <div class="text-xs text-cyan mt-1">July 2025</div>
+                        <div class="text-xs text-pink mt-3 blink">[ VIEW IMAGE ]</div>
+                    </div>
+                    
+                    <!-- Award 5 -->
+                    <div class="pixel-box border-yellow cursor-pointer transition-transform hover-scale" onclick='openGallery([{"src":"assets/certs/ESSAY.jpeg", "caption":"Finalis Essay Competition Economy Festival 2024"}])' style="padding:20px; transition: transform 0.2s; cursor: pointer;">
+                        <div class="text-yellow mb-2" style="font-family: \'Press Start 2P\', cursive; font-size: 12px; line-height: 1.6;">Finalis Essay Competition Economy Festival 2024</div>
+                        <div class="text-sm" style="color:#fff;">Economy Festival</div>
+                        <div class="text-xs text-cyan mt-1">2024</div>
+                        <div class="text-xs text-pink mt-3 blink">[ VIEW IMAGE ]</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+                <!-- Contact Section -->
+        <section id="contact" class="screen" style="padding-top: 80px; overflow-y: auto;">
+            <div class="pixel-box border-red" style="margin: 0 auto; padding: 40px; text-align: center; width: 90%; max-width: 800px; background: rgba(0,0,0,0.7); box-shadow: 0 0 20px rgba(255, 0, 85, 0.3);">
+                <h1 class="text-red blink mb-4" style="font-size: 2.5rem; text-shadow: 2px 2px 0px #000, 4px 4px 0px rgba(255,0,85,0.5);">CONTINUE?</h1>
+                <h2 class="text-cyan mb-6" style="line-height: 1.6;">LET'S <span class="text-yellow">WORK TOGETHER!</span></h2>
+                
+                <div class="countdown text-yellow" style="font-size: 5rem; text-shadow: 2px 2px 0px #000, 4px 4px 0px rgba(255,0,85,0.5); margin-bottom: 30px;">9</div>
+                
+                <div class="contact-links" style="display: flex; gap: 15px; flex-wrap: nowrap; justify-content: center; overflow-x: auto; padding-bottom: 10px;">
+                    <a href="mailto:juwita.nurihzza@gmail.com" class="arcade-btn hover-scale transition-transform" style="border: 4px solid #000; background-color: #E52521; color: #fff !important; color: #ff0055; padding: 15px 20px; font-size: 1rem; box-shadow: 4px 4px 0px #000; text-decoration: none; white-space: nowrap;">[ EMAIL ]</a>
+                    <a href="https://www.linkedin.com/in/juwita-nur-ihzza-ab6173273" target="_blank" class="arcade-btn hover-scale transition-transform" style="border: 4px solid #000; background-color: #00BFFF; color: #fff !important; color: #00ffff; padding: 15px 20px; font-size: 1rem; box-shadow: 4px 4px 0px #000; text-decoration: none; white-space: nowrap;">[ LINKEDIN ]</a>
+                    <a href="https://wa.me/6285806816530" target="_blank" class="arcade-btn hover-scale transition-transform" style="border: 4px solid #000; background-color: #43B047; color: #fff !important; color: #00ff00; padding: 15px 20px; font-size: 1rem; box-shadow: 4px 4px 0px #000; text-decoration: none; white-space: nowrap;">[ WHATSAPP ]</a>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center" style="margin-top: 60px; padding-bottom: 50px;">
+                <div style="display:flex; justify-content:center; gap:30px; margin-bottom: 20px; transform: scale(1.2);">
+                    <div class="ghost blinky"><div class="ghost-eyes"></div></div>
+                    <div class="ghost pinky"><div class="ghost-eyes"></div></div>
+                    <div class="ghost inky"><div class="ghost-eyes"></div></div>
+                    <div class="ghost clyde"><div class="ghost-eyes"></div></div>
+                </div>
+                <p class="text-xs text-pink" style="margin-top: 30px;">© 2026 JUWITA NUR IHZZA. ALL RIGHTS RESERVED.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Global Lightbox Overlay -->
+    <div id="lightbox-overlay" class="lightbox-overlay hidden">
+        <button class="close-btn text-red" onclick="closeLightbox()" style="position:fixed; top:20px; right:30px; font-size:2rem; z-index:20005;">[ X ]</button>
+        <button id="lightbox-prev" class="nav-lightbox prev-lightbox" onclick="changeLightboxImage(-1)">&#9664;</button>
+        <div class="lightbox-content">
+            <div id="lightbox-media-container" style="display:flex; justify-content:center; align-items:center;">
+                <img id="lightbox-img" class="lightbox-media hidden" src="" alt="Gallery Image">
+                <video id="lightbox-video" class="lightbox-media hidden" controls autoplay style="max-width:90vw; max-height:80vh;">
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p id="lightbox-caption" class="text-yellow mt-4"></p>
+            <p id="lightbox-counter" class="text-cyan text-sm mt-2"></p>
+        </div>
+        <button id="lightbox-next" class="nav-lightbox next-lightbox" onclick="changeLightboxImage(1)">&#9654;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
