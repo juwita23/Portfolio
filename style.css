@@ -543,3 +543,111 @@ ul.pacman-bullets li::before {
     text-shadow: 2px 2px 0px var(--inky-cyan), -1px -1px 0px rgba(255, 255, 255, 0.5);
     color: #fff;
 }
+
+/* --- NEW ARCADE DECORATIONS --- */
+
+/* CRT Overlay */
+#crt-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 4px, 6px 100%;
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+/* Custom Arcade Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+    background: #000;
+    border-left: 2px solid var(--wall-blue);
+}
+::-webkit-scrollbar-track {
+    background: repeating-linear-gradient(
+        0deg,
+        #000,
+        #000 10px,
+        #111 10px,
+        #111 20px
+    );
+}
+::-webkit-scrollbar-thumb {
+    background: var(--pacman-yellow);
+    border: 2px solid #000;
+    border-radius: 4px;
+    box-shadow: inset 0 0 5px rgba(255,100,0,0.8);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-pink);
+}
+
+/* Floating Background Elements */
+#floating-background {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+.floating-pixel {
+    position: absolute;
+    bottom: -50px;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    animation: floatUp linear infinite;
+}
+@keyframes floatUp {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-110vh) rotate(360deg); }
+}
+
+/* Background Images for floaters - base64 so we don't need external assets if they don't exist */
+.floating-pixel.coin {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 6px solid var(--pacman-yellow);
+    box-shadow: inset 0 0 10px var(--text-orange);
+}
+.floating-pixel.cherry {
+    background-color: var(--text-red);
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+}
+.floating-pixel.ghost-blue {
+    background-color: var(--text-cyan);
+    border-radius: 50% 50% 0 0;
+}
+
+/* Level Up Hover on Projects */
+.project-card {
+    position: relative;
+    overflow: visible; /* so the popup can show outside */
+}
+.project-card::before {
+    content: '1-UP!';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    color: #fff;
+    text-shadow: 2px 2px 0px var(--text-green);
+    background: rgba(0,0,0,0.8);
+    padding: 5px 10px;
+    border: 2px solid var(--text-green);
+    border-radius: 4px;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10;
+    pointer-events: none;
+}
+.project-card:hover::before {
+    top: -40px;
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+}
