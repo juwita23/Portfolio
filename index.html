@@ -1130,20 +1130,54 @@
 <!-- Modal: Portfolio Optimization -->
         <div id="modal-portfolio" class="project-modal pixel-box border-pink hidden">
             <button class="close-btn text-red" onclick="closeModals()">[ X ]</button>
-            <h2 class="text-yellow mb-2">Portfolio Optimization</h2>
-            <p class="text-sm"><strong class="text-pink">Overview:</strong> Developed an interactive portfolio optimization dashboard to assist investment decision making using the CCMV model and ABC algorithm.</p>
+            <h2 class="text-yellow mb-2">SRI-KEHATI Index Stock Portfolio Optimization</h2>
+            <p class="text-sm"><strong class="text-pink">Overview:</strong> This project focuses on optimizing the SRI-KEHATI index stock portfolio by applying the Cardinality Constrained Mean Variance model and metaheuristic algorithms. The analysis aims to find the most efficient stock investment combination based on environmental sustainability and good corporate governance principles.</p>
             
+            <p class="text-sm mt-4 mb-2"><strong class="text-orange">System Workflow:</strong></p>
+            <div class="workflow-container">
+                <div class="workflow-step">
+                    <div class="workflow-icon">1</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Data Selection</div>
+                        <div class="workflow-desc">Retrieved the closing price data of 25 SRI-KEHATI stocks and filtered them by comparing the expected return rates against the Risk Free Rate.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">2</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Optimization Process</div>
+                        <div class="workflow-desc">Applied Particle Swarm Optimization and Artificial Bee Colony algorithms to find the ideal stock weight allocation based on cardinality stock quantity constraints.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">3</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Performance Evaluation</div>
+                        <div class="workflow-desc">Compared the effectiveness of both algorithms by assessing return rates, risks, and Sharpe ratios.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">4</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Dashboard Creation</div>
+                        <div class="workflow-desc">Designed an interactive web interface application using Streamlit to directly visualize the portfolio optimization calculation results.</div>
+                    </div>
+                </div>
+            </div>
+
             <div class="text-sm mt-2">
                 <strong class="text-cyan">Key Insights:</strong>
                 <ul class="pacman-bullets" style="margin-top: 10px; padding-left: 20px;">
-                    <li>Produced optimal portfolio recommendations based on user-defined parameters within the SRI-KEHATI Index.</li>
+                    <li>The initial selection phase left 19 viable issuers for further analysis because they had return rates above the risk-free limit.</li>
+                    <li>The Artificial Bee Colony algorithm proved to be superior, generating the highest Sharpe ratio of 27.599 percent alongside a faster computation time of 9 minutes.</li>
+                    <li>The most optimal portfolio formed by the Artificial Bee Colony algorithm contained 9 selected issuers.</li>
+                    <li>The largest fund allocation was assigned to the SMSM issuer with a proportion of 27.76 percent because it had a highly stable profit distribution, effectively suppressing the overall portfolio risk.</li>
                 </ul>
             </div>
-            <p class="text-sm mt-4"><strong class="text-yellow">Tools:</strong> HTML, Google Colab, Streamlit, Artificial Bee Colony Algorithm</p>
-            <a href="https://optimasiabc.streamlit.app/" target="_blank" class="arcade-btn border-pink mt-4 block text-center" style="display:block;">[ VIEW LIVE APP ]</a>
+            <p class="text-sm mt-4"><strong class="text-yellow">Tools:</strong> Google Colab, Cardinality Constrained Mean Variance, Particle Swarm Optimization, Artificial Bee Colony, Streamlit.</p>
         </div>
 
-                <!-- Certification Section -->
+        <!-- Certification Section -->
         <section id="certifications" class="screen flex flex-col justify-start items-center" style="padding-top: 80px; overflow-y: auto;">
             <h2 class="section-title text-pink text-center w-full mb-6">CERTIFICATIONS & AWARDS</h2>
             
