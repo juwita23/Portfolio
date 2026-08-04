@@ -1078,33 +1078,40 @@
             <a href="https://drive.google.com/file/d/1R01KPGXg09ItCXf9h7w2UH0rJsN9Xm5P/view?usp=sharing" target="_blank" class="arcade-btn border-green mt-4 block text-center" style="display:block;">[ VIEW PROJECT FOLDER ]</a>
         </div>
 
-        <!-- Modal: Stock Price -->
+                <!-- Modal: Stock Price -->
         <div id="modal-stock" class="project-modal pixel-box border-yellow hidden">
             <button class="close-btn text-red" onclick="closeModals()">[ X ]</button>
-            <h2 class="text-yellow mb-2">Stock Price Forecasting & Factor Modelling</h2>
-            <p class="text-sm"><strong class="text-pink">Overview:</strong> Select the best performing emiten from the SRI-KEHATI index, forecast their stock prices, and model which macroeconomic/sectoral factors drive their price movements.</p>
+            <h2 class="text-yellow mb-2">Forecasting and Modeling of TLKM, JSMR, and UNVR Stock Prices</h2>
+            <p class="text-sm"><strong class="text-pink">Overview:</strong> This project focuses on forecasting and modeling the stock prices of three major Indonesian companies: Telkom, Jasa Marga, and Unilever. The analysis was conducted to directly observe how various macroeconomic and sectoral indicators influence the stock price movements of these companies in the capital market.</p>
             
             <p class="text-sm mt-4 mb-2"><strong class="text-orange">System Workflow:</strong></p>
             <div class="workflow-container">
                 <div class="workflow-step">
                     <div class="workflow-icon">1</div>
                     <div class="workflow-text-content">
-                        <div class="workflow-title">Selection</div>
-                        <div class="workflow-desc">Emiten selection using K Means clustering.</div>
+                        <div class="workflow-title">Data Collection</div>
+                        <div class="workflow-desc">Gathered the financial ratio data of issuers listed on the SRI KEHATI index, along with macroeconomic data such as exchange rates and money supply.</div>
                     </div>
                 </div>
                 <div class="workflow-step">
                     <div class="workflow-icon">2</div>
                     <div class="workflow-text-content">
-                        <div class="workflow-title">Forecasting</div>
-                        <div class="workflow-desc">Time series forecasting using ARIMA.</div>
+                        <div class="workflow-title">Issuer Clustering</div>
+                        <div class="workflow-desc">Grouped the financial health of the issuers using the K Means algorithm to filter out the top three stocks.</div>
                     </div>
                 </div>
                 <div class="workflow-step">
                     <div class="workflow-icon">3</div>
                     <div class="workflow-text-content">
-                        <div class="workflow-title">Modelling</div>
-                        <div class="workflow-desc">Factor modelling using Error Correction Model (ECM).</div>
+                        <div class="workflow-title">Price Forecasting</div>
+                        <div class="workflow-desc">Compared various time series methods and utilized Single Exponential Smoothing to predict stock price movements for the next five periods.</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-icon">4</div>
+                    <div class="workflow-text-content">
+                        <div class="workflow-title">Regression Modeling</div>
+                        <div class="workflow-desc">Applied the Error Correction Model to evaluate the impact of economic variables in both the short and long term.</div>
                     </div>
                 </div>
             </div>
@@ -1112,14 +1119,17 @@
             <div class="text-sm mt-2">
                 <strong class="text-cyan">Key Insights:</strong>
                 <ul class="pacman-bullets" style="margin-top: 10px; padding-left: 20px;">
-                    <li>Found the best ARIMA parameters for forecasting.</li>
-                    <li>Identified statistically significant predictors of stock price movements.</li>
+                    <li>The Single Exponential Smoothing algorithm with an alpha parameter of 0.8 proved to be the most precise in forecasting stock prices, as it successfully recorded the lowest error rate.</li>
+                    <li>The stock price projections for the next five periods showed a value of 3968.16 for Telkom, 4753.04 for Jasa Marga, and 3529.19 for Unilever.</li>
+                    <li>Currency exchange rates and investment credit factors were proven to have a highly significant influence on Telkom's stock price fluctuations in the long term.</li>
+                    <li>All built regression models were proven to be highly valid as they successfully met the normal distribution requirements and were free from autocorrelation issues.</li>
                 </ul>
             </div>
-            <p class="text-sm mt-4"><strong class="text-yellow">Tools:</strong> Python, Time Series Models, K Means, ECM</p>
-            <a href="https://drive.google.com/file/d/1X3d3JvXw0r-7fH3U5p_pG3Q7VjE8v9j4/view?usp=sharing" target="_blank" class="arcade-btn border-yellow mt-4 block text-center" style="display:block;">[ VIEW PROJECT FILE ]</a>
+            <p class="text-sm mt-4"><strong class="text-yellow">Tools:</strong> K Means Clustering, Single Exponential Smoothing, Error Correction Model, and Classical Assumption Testing.</p>
+            <a href="https://drive.google.com/file/d/1ssoa0GprzRYhiX98Mq6r1YFhvsA6SGOs/view?usp=sharing" target="_blank" class="arcade-btn border-yellow mt-4 block text-center" style="display:block;">[ VIEW PROJECT FILE ]</a>
         </div>
-        <!-- Modal: Portfolio Optimization -->
+
+<!-- Modal: Portfolio Optimization -->
         <div id="modal-portfolio" class="project-modal pixel-box border-pink hidden">
             <button class="close-btn text-red" onclick="closeModals()">[ X ]</button>
             <h2 class="text-yellow mb-2">Portfolio Optimization</h2>
