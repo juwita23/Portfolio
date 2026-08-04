@@ -510,3 +510,13 @@ ul.pacman-bullets li::before {
     vertical-align: middle;
     margin-right: 10px;
 }
+
+
+.pixel-title {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8), -1px -1px 0px rgba(255, 255, 255, 0.3);
+    letter-spacing: 1px;
+}
+.decorative-card:hover .pixel-title {
+    text-shadow: 2px 2px 0px var(--inky-cyan), -1px -1px 0px rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
