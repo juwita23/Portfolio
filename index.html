@@ -1015,48 +1015,59 @@
         <!-- Modal: Hotel Review -->
         <div id="modal-hotel" class="project-modal pixel-box border-green hidden">
             <button class="close-btn text-red" onclick="closeModals()">[ X ]</button>
-            <h2 class="text-yellow mb-2">Hotel Review Topic Modelling (BERTopic vs LDA)</h2>
-            <p><strong class="text-pink">Overview:</strong> Extract the dominant themes in customer reviews of My Tower Hotel Surabaya to support hotel management in prioritizing service improvements.</p>
-            <p class="mt-2"><strong class="text-orange">Workflow:</strong></p>
+            <h2 class="text-yellow mb-2">Hotel Review Topic Analysis Using NLP</h2>
+            <p><strong class="text-pink">Overview:</strong> This project breaks down thousands of customer reviews for My Tower Hotel Surabaya on Google Review to help management evaluate their service quality. The analysis compares two topic modeling methods namely Latent Dirichlet Allocation and BERTopic to find the most accurate model for clustering customer sentiment.</p>
+            
+            <p class="mt-4 mb-2"><strong class="text-orange">Workflow:</strong></p>
             <div class="workflow-container">
                 <div class="workflow-step">
                     <div class="workflow-icon">1</div>
                     <div class="workflow-text-content">
-                        <div class="workflow-title">Pre-processing</div>
-                        <div class="workflow-desc">Case folding, tokenizing, stopword removal.</div>
+                        <div class="workflow-title">Data Collection</div>
+                        <div class="workflow-desc">Collecting customer review data directly from the Google Review platform.</div>
                     </div>
                 </div>
                 <div class="workflow-step">
                     <div class="workflow-icon">2</div>
                     <div class="workflow-text-content">
-                        <div class="workflow-title">DTM</div>
-                        <div class="workflow-desc">Document Term Matrix construction.</div>
+                        <div class="workflow-title">Text Preprocessing</div>
+                        <div class="workflow-desc">Cleaning messy text by removing numbers and symbols then filtering Indonesian stopwords using the Sastrawi library.</div>
                     </div>
                 </div>
                 <div class="workflow-step">
                     <div class="workflow-icon">3</div>
                     <div class="workflow-text-content">
-                        <div class="workflow-title">Exploratory</div>
-                        <div class="workflow-desc">Exploratory wordcloud analysis.</div>
+                        <div class="workflow-title">Matrix Transformation</div>
+                        <div class="workflow-desc">Converting clean text into a numerical format via the Document Term Matrix process.</div>
                     </div>
                 </div>
                 <div class="workflow-step">
                     <div class="workflow-icon">4</div>
                     <div class="workflow-text-content">
-                        <div class="workflow-title">Topic Modelling</div>
-                        <div class="workflow-desc">Topic modelling using LDA and BERTopic.</div>
+                        <div class="workflow-title">Model Training and Evaluation</div>
+                        <div class="workflow-desc">Running the topic modeling algorithms and measuring their quality using the Coherence Score metric.</div>
                     </div>
                 </div>
                 <div class="workflow-step">
                     <div class="workflow-icon">5</div>
                     <div class="workflow-text-content">
-                        <div class="workflow-title">Evaluation</div>
-                        <div class="workflow-desc">Model evaluation via coherence score and visualization.</div>
+                        <div class="workflow-title">Data Visualization</div>
+                        <div class="workflow-desc">Mapping the text clustering results into visual representations to draw conclusions.</div>
                     </div>
                 </div>
             </div>
-            <p class="mt-2"><strong class="text-cyan">Key Insight:</strong> Room cleanliness and comfort is the dominant theme for reputation management.</p>
-            <p class="mt-2"><strong class="text-yellow">Tools:</strong> Python (Sastrawi, LDA, BERTopic)</p>
+            
+            <div class="mt-2">
+                <strong class="text-cyan">Key Insights:</strong>
+                <ul class="pacman-bullets" style="margin-top: 10px; padding-left: 20px;">
+                    <li>The BERTopic model proved superior and smarter at understanding language context by achieving a coherence score of 0.5392 beating the older model which only scored 0.5242.</li>
+                    <li>Topic extraction results showed that most visitors submitted complaints regarding room cleanliness issues.</li>
+                    <li>For positive sentiment visitors highly praised the comfortable atmosphere and friendly service staff.</li>
+                    <li>Manual intervention by merging topics actually degraded the model quality proving that pure machine results are far more optimal.</li>
+                </ul>
+            </div>
+            
+            <p class="mt-4"><strong class="text-yellow">Tools:</strong> Python, BERTopic Algorithm, Latent Dirichlet Allocation Algorithm, Sastrawi Library, Hierarchical Clustering, and Wordcloud.</p>
             <a href="https://drive.google.com/file/d/1R01KPGXg09ItCXf9h7w2UH0rJsN9Xm5P/view?usp=sharing" target="_blank" class="arcade-btn border-green mt-4 block text-center" style="display:block;">[ VIEW PROJECT FOLDER ]</a>
         </div>
 
