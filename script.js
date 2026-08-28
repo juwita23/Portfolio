@@ -582,3 +582,32 @@ function scrollCert(direction) {
         }
     }, 500);
 }
+
+// Certifications Auto-Slide and Zoom Animation
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Auto slide every 3 seconds
+    setInterval(() => {
+        scrollCert(1);
+    }, 3000);
+
+    // 2. Add zoom effect to visible cards
+    const certCards = document.querySelectorAll('.cert-card');
+    const container = document.getElementById('certCarousel');
+    
+    if (container && certCards.length > 0) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active-cert');
+                } else {
+                    entry.target.classList.remove('active-cert');
+                }
+            });
+        }, {
+            root: container,
+            threshold: 0.8 // Trigger when 80% of the card is visible
+        });
+
+        certCards.forEach(card => observer.observe(card));
+    }
+});
