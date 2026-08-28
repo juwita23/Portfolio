@@ -565,36 +565,42 @@ document.addEventListener('keydown', function(e) {
 function scrollCert(direction) {
     const container = document.getElementById('certCarousel');
     if (!container) return;
-    
-    const cardWidth = container.querySelector('.cert-card').offsetWidth + 20; // width + gap
+    const cardWidth = container.querySelector('.cert-card').offsetWidth + 20;
     container.scrollBy({ left: cardWidth * direction, behavior: 'smooth' });
-
-    // Handle loop-back behavior
-    setTimeout(() => {
-        if (direction === 1 && container.scrollLeft + container.clientWidth >= container.scrollWidth - 10) {
-            setTimeout(() => {
-                container.scrollTo({ left: 0, behavior: 'smooth' });
-            }, 1500);
-        } else if (direction === -1 && container.scrollLeft <= 10) {
-            setTimeout(() => {
-                container.scrollTo({ left: container.scrollWidth, behavior: 'smooth' });
-            }, 500);
-        }
-    }, 500);
 }
 
 // Certifications Auto-Slide and Zoom Animation
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Auto slide every 3 seconds
-    setInterval(() => {
-        scrollCert(1);
-    }, 3000);
-
-    // 2. Add zoom effect to visible cards
-    const certCards = document.querySelectorAll('.cert-card');
     const container = document.getElementById('certCarousel');
+    const track = document.querySelector('.cert-track');
     
-    if (container && certCards.length > 0) {
+    if (container && track) {
+        // Clone items for infinite scroll
+        const cards = Array.from(track.children);
+        cards.forEach(card => {
+            const clone = card.cloneNode(true);
+            track.appendChild(clone);
+        });
+
+        // 1. Auto slide every 2 seconds (faster)
+        setInterval(() => {
+            const cardWidth = container.querySelector('.cert-card').offsetWidth + 20;
+            
+            // If we've scrolled past the first original set of cards
+            if (container.scrollLeft >= track.scrollWidth / 2 - cardWidth) {
+                // Instantly jump back to the start
+                container.style.scrollBehavior = 'auto';
+                container.scrollLeft = 0;
+                // Force reflow
+                container.offsetHeight;
+                container.style.scrollBehavior = 'smooth';
+            }
+            
+            container.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        }, 2000);
+
+        // 2. Add zoom effect to visible cards
+        const allCards = document.querySelectorAll('.cert-card');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -605,9 +611,9 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }, {
             root: container,
-            threshold: 0.8 // Trigger when 80% of the card is visible
+            threshold: 0.8
         });
 
-        certCards.forEach(card => observer.observe(card));
+        allCards.forEach(card => observer.observe(card));
     }
 });
