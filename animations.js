@@ -1,13 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Scroll Progress Bar
-    const progressBar = document.getElementById('scrollProgress');
-    window.addEventListener('scroll', () => {
-        const scrollTop = window.scrollY;
-        const docHeight = document.body.scrollHeight - window.innerHeight;
-        const scrolled = (scrollTop / docHeight) * 100;
-        if (progressBar) progressBar.style.width = scrolled + '%';
-    });
-
     // 2. Scroll-Driven Reveal (Add reveal class dynamically)
     const revealElements = document.querySelectorAll('.bento-card, .exp-row, .proj-card, .skill-folder, .cert-card, .about-header-centered, .section-header-centered, .contact-card');
     revealElements.forEach((el, index) => {
