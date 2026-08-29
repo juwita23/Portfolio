@@ -11,6 +11,11 @@
 <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+</div>
+
 <nav class="navbar">
 <div class="logo">
 <span class="dots">
@@ -1195,7 +1200,7 @@
             <footer class="site-footer" style="margin-top: 6rem; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
                 <p style="color: #64748b; font-size: 0.95rem; margin: 0;">&copy; 2026 Juwita Nur Ihzza. All rights reserved.</p>
                 <div style="font-size: 0.95rem; color: #64748b; font-weight: 500;">
-                    Designed with <span style="color: #ec4899;">&hearts;</span>
+                    Designed with <span style="color: #ec4899;">&hearts;</span> and Data.
                 </div>
             </footer>
         </div>
@@ -1218,6 +1223,8 @@
 
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script src="animations.js"></script>
 <script src="script.js"></script> <script>
         function toggleExpRow(header) {
             const row = header.closest('.exp-row');
