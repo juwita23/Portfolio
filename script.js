@@ -124,11 +124,11 @@ const projectData = {
             { num: '4', title: 'Dashboard & Segmentation (Power BI)', desc: 'Built 4-page interactive dashboard. Applied Pareto (80/20) analysis and RFM segmentation to classify customer value and churn risk.' }
         ],
         insights: [
-            'Revenue is concentrated in a small group of top customers, a <span class="pm-highlight">concentration risk</span> worth ongoing monitoring.',
-            'Sales grew from 2024 to 2025, but profit margin slightly declined from <span class="pm-highlight-green">18.1%</span> to <span class="pm-highlight-red">17.9%</span>, growth is not translating fully into profitability.',
-            '<strong>Retail Tradisional</strong> and <strong>Horeka</strong> are the most profitable channels <span class="pm-highlight">by margin, not by volume</span>, a distinction the volume-only view would miss.',
-            '<strong>Champions</strong> drive the most sales value, while <strong>Lost Customers</strong> show <span class="pm-highlight-red">~273 days average recency</span>, a clear, quantifiable churn-risk segment to act on.',
-            'Salesperson performance varies meaningfully across <span class="pm-highlight-blue">two axes (volume and margin)</span>, making a simple "top seller" ranking insufficient.'
+            'Revenue is concentrated in a small group of top customers, a concentration risk worth ongoing monitoring.',
+            'Sales grew significantly from 2024 to 2025 (roughly 2.5x), and profit margin improved slightly alongside it, from 17.9% to 18.1%, meaning growth came without sacrificing profitability.',
+            'Retail Tradisional and Horeka are the most profitable channels by margin, not by volume, a distinction the volume-only view would miss.',
+            'Champions drive the most sales value, while Lost Customers show ~273 days average recency, a clear, quantifiable churn-risk segment to act on.',
+            'Salesperson performance varies meaningfully across two axes (volume and margin), making a simple "top seller" ranking insufficient.'
         ],
         images: [
             'assets/sales analyst (1).jpg',
@@ -279,11 +279,10 @@ const projectData = {
             { num: '4', title: 'Dashboard Design', desc: 'Build an interactive layout focusing on trends, regional heatmaps, and product leaderboards.' }
         ],
         insights: [
-            'Revenue is concentrated in a small group of top customers, a concentration risk worth ongoing monitoring.',
-            'Sales grew significantly from 2024 to 2025 (roughly 2.5x), and profit margin improved slightly alongside it, from 17.9% to 18.1%, meaning growth came without sacrificing profitability.',
-            'Retail Tradisional and Horeka are the most profitable channels by margin, not by volume, a distinction the volume-only view would miss.',
-            'Champions drive the most sales value, while Lost Customers show ~273 days average recency, a clear, quantifiable churn-risk segment to act on.',
-            'Salesperson performance varies meaningfully across two axes (volume and margin), making a simple "top seller" ranking insufficient.'
+            'Classic Cars generated the highest sales revenue.',
+            'Medium sized deals contributed nearly 60% of total sales revenue.',
+            'The USA recorded the highest sales, with Madrid and New York City leading.',
+            'Euro Shopping Channel was the highest-contributing customer.'
         ],
         images: [
             'assets/sales-dashboard.jpg'
