@@ -398,6 +398,32 @@ const projectData = {
         ],
         tools: ['Google Sheets', 'Looker Studio'],
         links: []
+    },
+    'leadership-dashboard': {
+        title: 'Leadership Management Dashboard',
+        badge: 'Data Visualization',
+        badgeClass: 'pm-badge-viz',
+        overview: 'Developed a Leadership Management Dashboard to monitor the progress and performance of the Leadership Management Training program across multiple coaching batches, providing management with real time insights into coaching completion, satisfaction scores, coach performance, and departmental achievements.',
+        workflow: [
+            { num: '1', title: 'Data Collection', desc: 'Gathered data from the relevant sources.' },
+            { num: '2', title: 'Data Preparation', desc: 'Cleaned and formatted the data for analysis.' },
+            { num: '3', title: 'Dashboard Development', desc: 'Designed the layout and visualizations.' },
+            { num: '4', title: 'Data Validation', desc: 'Ensured accuracy of metrics and information.' },
+            { num: '5', title: 'Monitoring & Reporting', desc: 'Deployed for real-time tracking.' }
+        ],
+        insights: [
+            'Provided a comprehensive view of Leadership Management Training progress through <strong>coaching completion, satisfaction scores, and overall performance</strong> across all training batches.',
+            'Enabled management to identify <strong>top and bottom performing coaches</strong>, compare coaching performance across departments, and recognize high performing functions.',
+            'Allowed individual coaches to review their <strong>detailed coaching results, rankings, coachee feedback, and performance metrics</strong> to support continuous improvement.'
+        ],
+        images: [
+            'assets/leadership_dash_1.jpg',
+            'assets/leadership_dash_2.jpg',
+            'assets/leadership_dash_3.jpg'
+        ],
+        tools: ['Google Sheets', 'Looker Studio'],
+        links: [],
+        manualCarousel: true
     }
 };
 
