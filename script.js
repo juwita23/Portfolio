@@ -424,6 +424,56 @@ const projectData = {
         tools: ['Google Sheets', 'Looker Studio'],
         links: [],
         manualCarousel: true
+    },
+    'internship-system': {
+        title: 'Internship Management System',
+        badge: 'Automation',
+        badgeClass: 'pm-badge-auto',
+        overview: 'Developed an Internship Management System to digitalize internship administration by automating attendance, logbook management, approval workflows, and monthly allowance recaps to improve operational efficiency.',
+        workflow: [
+            { num: '1', title: 'Intern Attendance & Logbook', desc: '' },
+            { num: '2', title: 'Mentor Review & Approval', desc: '' },
+            { num: '3', title: 'Automated Data Sync', desc: '' },
+            { num: '4', title: 'Admin Monitoring & Recap', desc: '' },
+            { num: '5', title: 'Internship Monitoring', desc: '' }
+        ],
+        insights: [
+            '<strong>Attendance Management:</strong> Digital clock in and clock out with automatic attendance summaries.',
+            '<strong>Logbook & Approval:</strong> Daily logbooks are submitted and approved through the system.',
+            '<strong>Performance Evaluation:</strong> Mentors provide feedback and final evaluations accessible to interns.',
+            '<strong>Automated Monthly Recap:</strong> One click attendance reports for monthly allowance calculations.',
+            '<strong>Impact:</strong> Digitalized the end to end internship administration process, reducing manual work and improving operational efficiency.'
+        ],
+        images: [
+            'assets/borwita-attendance.mp4'
+        ],
+        tools: ['Google Sheets', 'Google Apps Script', 'HTML/CSS/JS', 'Vercel'],
+        links: [],
+        manualCarousel: false
+    },
+    'talent-system': {
+        title: 'Talent Management System (TMS)',
+        badge: 'Automation',
+        badgeClass: 'pm-badge-auto',
+        overview: 'A web based Talent Management System that centralizes vacancy requests, candidate recommendations, interview documentation, and succession planning into a single platform. The system automatically recommends the most suitable internal candidates for each vacancy using configurable priority matching criteria.',
+        workflow: [
+            { num: '1', title: 'Vacancy Request', desc: '' },
+            { num: '2', title: 'Candidate Recommendation', desc: '' },
+            { num: '3', title: 'Interview & Successor Management', desc: '' },
+            { num: '4', title: 'Dashboard & Monitoring', desc: '' }
+        ],
+        insights: [
+            '<strong>Automated internal candidate recommendation</strong> using configurable priority matching.',
+            '<strong>Centralized vacancy request</strong> and recruitment tracking.',
+            '<strong>Interview scheduling</strong>, documentation, and evaluation management.',
+            '<strong>Impact:</strong> Reduced manual spreadsheet searching and eliminated the need to switch between multiple platforms by integrating candidate recommendation, interview documentation, and talent monitoring.'
+        ],
+        images: [
+            'assets/borwita-talent.mp4'
+        ],
+        tools: ['Google Apps Script', 'HTML/CSS/JS', 'Google Sheets', 'Vercel'],
+        links: [],
+        manualCarousel: false
     }
 };
 
@@ -480,7 +530,7 @@ function openProjectModal(projectId) {
                 <button class="pm-carousel-btn next" onclick="moveProjectCarousel(1, event)" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); z-index: 10; background: rgba(0,0,0,0.5); color: white; border: none; padding: 10px; cursor: pointer; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">&#10095;</button>
                 ` : ''}
                 <div class="pm-carousel-track" id="pmCarouselTrack">
-                    ${data.images.map(img => `<img src="${img}" alt="Project Image" class="pm-carousel-img">`).join('')}
+                    ${data.images.map(img => img.endsWith('.mp4') ? `<video src="${img}" autoplay loop muted playsinline class="pm-carousel-img" style="width:100%; border-radius:12px;"></video>` : `<img src="${img}" alt="Project Image" class="pm-carousel-img">`).join('')}
                 </div>
                 <div class="pm-carousel-indicators" id="pmCarouselIndicators">
                     ${data.images.map((_, i) => `<span class="pm-carousel-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></span>`).join('')}
