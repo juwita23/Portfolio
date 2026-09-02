@@ -179,20 +179,34 @@ body {
     margin-bottom: 25px;
 }
 
-.typewriter-text {
-    color: var(--primary-blue);
-}
-
-.cursor {
+.text-slider {
     display: inline-block;
-    width: 3px;
-    animation: blink 1s step-end infinite;
-    color: var(--text-secondary);
+    overflow: hidden;
+    vertical-align: bottom;
+    height: 1.5rem;
+    line-height: 1.5rem;
 }
 
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+.text-slider-inner {
+    display: flex;
+    flex-direction: column;
+    animation: slideUpText 8s infinite cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.text-slider-inner span {
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+@keyframes slideUpText {
+    0%, 15% { transform: translateY(0); }
+    25%, 40% { transform: translateY(-1.5rem); }
+    50%, 65% { transform: translateY(-3rem); }
+    75%, 90% { transform: translateY(-4.5rem); }
+    100% { transform: translateY(-6rem); }
 }
 
 .hero-subtitle {
