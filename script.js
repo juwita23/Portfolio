@@ -279,10 +279,11 @@ const projectData = {
             { num: '4', title: 'Dashboard Design', desc: 'Build an interactive layout focusing on trends, regional heatmaps, and product leaderboards.' }
         ],
         insights: [
-            'Classic Cars generated the highest sales revenue.',
-            'Medium sized deals contributed nearly 60% of total sales revenue.',
-            'The USA recorded the highest sales, with Madrid and New York City leading.',
-            'Euro Shopping Channel was the highest-contributing customer.'
+            'Revenue is concentrated in a small group of top customers, a concentration risk worth ongoing monitoring.',
+            'Sales grew significantly from 2024 to 2025 (roughly 2.5x), and profit margin improved slightly alongside it, from 17.9% to 18.1%, meaning growth came without sacrificing profitability.',
+            'Retail Tradisional and Horeka are the most profitable channels by margin, not by volume, a distinction the volume-only view would miss.',
+            'Champions drive the most sales value, while Lost Customers show ~273 days average recency, a clear, quantifiable churn-risk segment to act on.',
+            'Salesperson performance varies meaningfully across two axes (volume and margin), making a simple "top seller" ranking insufficient.'
         ],
         images: [
             'assets/sales-dashboard.jpg'
