@@ -180,7 +180,7 @@ body {
 }
 
 .text-slider {
-    display: inline-block;
+    display: inline-flex;
     overflow: hidden;
     vertical-align: bottom;
     height: 1.5rem;
@@ -188,17 +188,17 @@ body {
 }
 
 .text-slider-inner {
-    display: flex;
-    flex-direction: column;
+    display: block;
     animation: slideUpText 8s infinite cubic-bezier(0.83, 0, 0.17, 1);
 }
 
 .text-slider-inner span {
+    display: block;
     height: 1.5rem;
-    display: flex;
-    align-items: center;
+    line-height: 1.5rem;
     color: var(--primary-blue);
     font-weight: 600;
+    white-space: nowrap;
 }
 
 @keyframes slideUpText {
