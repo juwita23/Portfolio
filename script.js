@@ -375,6 +375,29 @@ const projectData = {
         tools: ['Power BI', 'DAX', 'Excel'],
         links: [],
         manualCarousel: true
+    },
+    'orientation-dashboard': {
+        title: 'Orientation Monitoring Dashboard',
+        badge: 'Data Visualization',
+        badgeClass: 'pm-badge-viz',
+        overview: 'Developed an Orientation Monitoring Dashboard to help the Talent Management team monitor employee orientation status, track employee movements, and streamline reporting through an interactive dashboard.',
+        workflow: [
+            { num: '1', title: 'Data Collection', desc: 'Gathered data from the relevant sources.' },
+            { num: '2', title: 'Data Preparation', desc: 'Cleaned and formatted the data for analysis.' },
+            { num: '3', title: 'Dashboard Development', desc: 'Designed the layout and visualizations.' },
+            { num: '4', title: 'Data Validation', desc: 'Ensured accuracy of metrics and information.' },
+            { num: '5', title: 'Monitoring & Reporting', desc: 'Deployed for real-time tracking.' }
+        ],
+        insights: [
+            'Provided <strong>real-time visibility</strong> into employee orientation status, enabling HR to identify employees who had passed, failed, or exceeded their orientation period and required immediate follow up.',
+            'Enabled management to monitor <strong>promotion, mutation, and demotion trends</strong> across supervisory and managerial levels while providing detailed employee information for talent reviews.',
+            'Reduced manual reporting by consolidating multiple HR datasets into a <strong>single interactive dashboard</strong>, improving monitoring efficiency and supporting data driven talent management decisions.'
+        ],
+        images: [
+            'assets/orientation_dashboard.jpg'
+        ],
+        tools: ['Google Sheets', 'Looker Studio'],
+        links: []
     }
 };
 
