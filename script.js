@@ -267,31 +267,6 @@ const projectData = {
             { label: 'View Dashboard (Looker Studio)', url: 'https://datastudio.google.com/u/0/reporting/7dc8af70-7f80-4cbd-8dc9-902cf8bead97' }
         ]
     },
-    'sales-dashboard': {
-        title: 'Sales Dashboard',
-        badge: 'Data Visualization',
-        badgeClass: 'pm-badge-viz',
-        overview: 'Visualizes sales performance through revenue trends, product performance, customer insights, and regional analysis to support data driven business decision making.',
-        workflow: [
-            { num: '1', title: 'Data Extraction', desc: 'Extract order-level sales data (date, product, quantity, price, customer, region).' },
-            { num: '2', title: 'Data Modeling', desc: 'Clean and model the data into a simple fact-dimension structure.' },
-            { num: '3', title: 'Metric Creation', desc: 'Calculate Total Revenue, Deals Size, and identify top performing categories.' },
-            { num: '4', title: 'Dashboard Design', desc: 'Build an interactive layout focusing on trends, regional heatmaps, and product leaderboards.' }
-        ],
-        insights: [
-            '<strong>Classic Cars</strong> generated the <span class="pm-highlight-green">highest sales revenue</span>.',
-            'Medium sized deals contributed <span class="pm-highlight-blue">nearly 60%</span> of total sales revenue.',
-            'The <strong>USA</strong> recorded the highest sales, with <strong>Madrid</strong> and <strong>New York City</strong> leading.',
-            '<strong>Euro Shopping Channel</strong> was the <span class="pm-highlight-green">highest-contributing customer</span>.'
-        ],
-        images: [
-            'assets/sales-dashboard.jpg'
-        ],
-        tools: ['Power BI'],
-        links: [
-            { label: 'View Dashboard (Power BI)', url: 'https://app.powerbi.com/view?r=eyJrIjoiNDQyYWZkODQtYzJiZS00YTllLTljMjMtZGRhMDliODUwMGMyIiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D' }
-        ]
-    },
     'student-retention': {
         title: 'Student Retention & Learning Performance Dashboard',
         badge: 'Data Analysis',
