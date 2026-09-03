@@ -286,9 +286,13 @@ const projectData = {
             'The <strong>Bandung</strong> store recorded the <span class="pm-highlight-red">largest stock discrepancy at approximately 4,000 units</span>, with a significant gap compared with other stores, indicating potential inventory shrinkage or warehouse management issues.'
         ],
         images: [
-            'assets/multi-store-retail.jpg'
+            'assets/multi-store-retail.jpg',
+            'assets/multi-store-retail-model.png'
         ],
-        tools: ['Power Query', 'Power BI', 'DAX']
+        tools: ['Power Query', 'Power BI', 'DAX'],
+        links: [
+            { label: 'View Dashboard (Power BI)', url: 'https://app.powerbi.com/view?r=eyJrIjoiM2ViYjY4OTgtYTJkYi00Mjc3LTgzNjAtY2RjMDU3Y2RmMzg0IiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D' }
+        ]
     },
     'student-retention': {
         title: 'Student Retention & Learning Performance Dashboard',
