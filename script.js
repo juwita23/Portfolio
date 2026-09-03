@@ -146,10 +146,10 @@ const projectData = {
         ]
     },
     'inventory-analyst': {
-        title: 'Inventory Analyst',
+        title: 'Inventory Demand Forecasting & Optimization',
         badge: 'Data Analysis',
         badgeClass: 'pm-badge-analysis',
-        overview: 'This case study simulates a nationwide motorcycle dealership network operating multiple branches across different provinces. Build a data-driven <strong>Decision Support System</strong> that helps management answer: which branches are underperforming, which products need restocking, and what demand looks like in the months ahead.',
+        overview: 'This project simulates a nationwide motorcycle dealership network operating multiple branches across different provinces. It builds a data-driven Decision Support System that helps management answer critical supply chain questions: which branches are underperforming, which products need restocking, and what demand looks like in the upcoming months using predictive forecasting.',
         workflow: [
             { num: '1', title: 'Database Design (SQL)', desc: 'Designed a star schema and generated 31,447 simulated transactions. Delivered SQLite and MySQL DDL.' },
             { num: '2', title: 'Business Analysis (SQL)', desc: 'Analyzed product sales, margin, turnover, and stockout branches.' },
