@@ -267,6 +267,29 @@ const projectData = {
             { label: 'View Dashboard (Looker Studio)', url: 'https://datastudio.google.com/u/0/reporting/7dc8af70-7f80-4cbd-8dc9-902cf8bead97' }
         ]
     },
+    'multi-store-retail': {
+        title: 'Multi-Store Retail Performance & Operational Analytics',
+        badge: 'Data Analysis',
+        badgeClass: 'pm-badge-analysis',
+        overview: 'This project analyzes the operations of a multi-store retail company with branches across several cities. The business sells products across multiple categories, ranging from food and beverages to consumer electronics, while running customer membership and promotional programs. The analysis covers daily operational data from July 2024 to December 2025.',
+        workflow: [
+            { num: '1', title: 'Data Cleaning and Transformation', desc: 'Cleaned corrupted datetime records by extracting valid date values and removing 76 persistent error rows to maintain calendar consistency. Standardized product categories using Power Query transformations, including trimming spaces, cleaning hidden characters, replacing non-breaking spaces, and standardizing capitalization.' },
+            { num: '2', title: 'Data Modeling', desc: 'Built a star schema connecting the transaksi, item_transaksi, and stok_opname fact tables with supporting dimensions for time, stores, products, and promotions.' },
+            { num: '3', title: 'DAX Development', desc: 'Created analytical measures to track membership contribution, promotional revenue, and inventory discrepancies. Also developed a Year-Month Sort Index to ensure chronological reporting across multiple years.' },
+            { num: '4', title: 'Dashboard Development', desc: 'Designed an interactive 16:9 Power BI dashboard featuring six key KPIs, dropdown slicers for filtering, and a consistent visual design. Inventory discrepancy indicators were highlighted to make potential loss areas easier to identify.' }
+        ],
+        insights: [
+            'Revenue and gross margin remained relatively flat after July 2024 before <span class="pm-highlight-green">increasing significantly in June and July 2025</span>. Both metrics remained at a higher level through the end of 2025, indicating a sustained improvement.',
+            '<strong>Food</strong> generated approximately <span class="pm-highlight-green">0.67 billion</span> in revenue, followed by Beverages at 0.56 billion. Meanwhile, <strong>Small Electronics</strong> contributed only <span class="pm-highlight-red">0.18 billion</span>, making it the weakest-performing category.',
+            'Member customers contributed <span class="pm-highlight-blue">47.16% of total revenue</span>. The contribution remained consistently between 46% and 47% across all product categories, showing broad purchasing behavior.',
+            'Contrary to the assumption that retail traffic would peak on weekends, transaction volume was <span class="pm-highlight-blue">highest on Mondays, with more than 10,000 transactions</span>, and gradually declined toward Sunday.',
+            'The <strong>Bandung</strong> store recorded the <span class="pm-highlight-red">largest stock discrepancy at approximately 4,000 units</span>, with a significant gap compared with other stores, indicating potential inventory shrinkage or warehouse management issues.'
+        ],
+        images: [
+            'assets/multi-store-retail.jpg'
+        ],
+        tools: ['Power Query', 'Power BI', 'DAX']
+    },
     'student-retention': {
         title: 'Student Retention & Learning Performance Dashboard',
         badge: 'Data Analysis',
