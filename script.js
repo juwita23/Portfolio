@@ -621,13 +621,7 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-/* Certifications Carousel Logic */
-function scrollCert(direction) {
-    const container = document.getElementById('certCarousel');
-    if (!container) return;
-    const cardWidth = container.querySelector('.cert-card').offsetWidth + 20;
-    container.scrollBy({ left: cardWidth * direction, behavior: 'smooth' });
-}
+
 
 // Certifications Auto-Slide and Zoom Animation
 document.addEventListener('DOMContentLoaded', () => {
@@ -642,22 +636,7 @@ document.addEventListener('DOMContentLoaded', () => {
             track.appendChild(clone);
         });
 
-        // 1. Auto slide every 2 seconds (faster)
-        setInterval(() => {
-            const cardWidth = container.querySelector('.cert-card').offsetWidth + 20;
-            
-            // If we've scrolled past the first original set of cards
-            if (container.scrollLeft >= track.scrollWidth / 2 - cardWidth) {
-                // Instantly jump back to the start
-                container.style.scrollBehavior = 'auto';
-                container.scrollLeft = 0;
-                // Force reflow
-                container.offsetHeight;
-                container.style.scrollBehavior = 'smooth';
-            }
-            
-            container.scrollBy({ left: cardWidth, behavior: 'smooth' });
-        }, 2000);
+
 
         // 2. Add zoom effect to visible cards
         const allCards = document.querySelectorAll('.cert-card');
