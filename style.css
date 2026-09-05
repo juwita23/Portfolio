@@ -849,11 +849,9 @@ body {
 }
 .cert-carousel-container {
     width: 100%;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    overflow: hidden; /* Hide scrollbar completely for marquee */
     padding: 10px 0 20px; /* Padding for shadow */
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    position: relative;
 }
 .cert-carousel-container::-webkit-scrollbar {
     display: none; /* Hide scrollbar for Chrome/Safari */
@@ -861,7 +859,15 @@ body {
 .cert-track {
     display: flex;
     gap: 20px;
-    padding: 0 5%;
+    width: max-content;
+    animation: scrollMarquee 30s linear infinite;
+}
+.cert-track:hover {
+    animation-play-state: paused;
+}
+@keyframes scrollMarquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 10px)); }
 }
 .cert-card {
     flex: 0 0 280px;
