@@ -621,7 +621,13 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-
+/* Certifications Carousel Logic */
+function scrollCert(direction) {
+    const container = document.getElementById('certCarousel');
+    if (!container) return;
+    const cardWidth = container.querySelector('.cert-card').offsetWidth + 20;
+    container.scrollBy({ left: cardWidth * direction, behavior: 'smooth' });
+}
 
 // Certifications Auto-Slide and Zoom Animation
 document.addEventListener('DOMContentLoaded', () => {
@@ -630,14 +636,41 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (container && track) {
         // Clone items for infinite scroll
-        const cards = Array.from(track.children);
-        cards.forEach(card => {
-            const clone = card.cloneNode(true);
-            track.appendChild(clone);
+        const originalCards = Array.from(track.children);
+        originalCards.forEach(card => {
+            track.appendChild(card.cloneNode(true));
         });
 
+        // Set up seamless loop
+        let isJumping = false;
+        const handleScroll = () => {
+            if (isJumping) return;
+            const cardWidth = originalCards[0].offsetWidth + 20;
+            const totalOriginalWidth = cardWidth * originalCards.length;
+            
+            if (container.scrollLeft >= totalOriginalWidth) {
+                isJumping = true;
+                container.style.scrollBehavior = 'auto';
+                container.scrollLeft -= totalOriginalWidth;
+                void container.offsetWidth; // Force reflow
+                container.style.scrollBehavior = 'smooth';
+                setTimeout(() => isJumping = false, 50);
+            }
+        };
 
+        container.addEventListener('scroll', handleScroll, { passive: true });
 
+        // Auto slide
+        let autoSlide = setInterval(() => scrollCert(1), 3000);
+        
+        container.addEventListener('mouseenter', () => clearInterval(autoSlide));
+        container.addEventListener('mouseleave', () => {
+            autoSlide = setInterval(() => scrollCert(1), 3000);
+        });
+        container.addEventListener('touchstart', () => clearInterval(autoSlide), { passive: true });
+        container.addEventListener('touchend', () => {
+            autoSlide = setInterval(() => scrollCert(1), 3000);
+        });
         // 2. Add zoom effect to visible cards
         const allCards = document.querySelectorAll('.cert-card');
         const observer = new IntersectionObserver((entries) => {
