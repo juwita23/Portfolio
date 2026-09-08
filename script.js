@@ -292,7 +292,7 @@ const projectData = {
         ],
         tools: ['Power Query', 'Power BI', 'DAX'],
         links: [
-            { label: 'View Dashboard (Power BI)', url: 'https://app.powerbi.com/view?r=eyJrIjoiM2ViYjY4OTgtYTJkYi00Mjc3LTgzNjAtY2RjMDU3Y2RmMzg0IiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D' }
+            { label: 'View Dashboard (Power BI)', url: 'https://app.powerbi.com/view?r=eyJrIjoiYTQxZmU2ZTYtMmNhZS00Yjg2LThhZmItMzk2ODM1MDhmOWRiIiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D' }
         ]
     },
     'student-retention': {
