@@ -661,15 +661,15 @@ document.addEventListener('DOMContentLoaded', () => {
         container.addEventListener('scroll', handleScroll, { passive: true });
 
         // Auto slide
-        let autoSlide = setInterval(() => scrollCert(1), 3000);
+        let autoSlide = setInterval(() => scrollCert(1), 2000);
         
         container.addEventListener('mouseenter', () => clearInterval(autoSlide));
         container.addEventListener('mouseleave', () => {
-            autoSlide = setInterval(() => scrollCert(1), 3000);
+            autoSlide = setInterval(() => scrollCert(1), 2000);
         });
         container.addEventListener('touchstart', () => clearInterval(autoSlide), { passive: true });
         container.addEventListener('touchend', () => {
-            autoSlide = setInterval(() => scrollCert(1), 3000);
+            autoSlide = setInterval(() => scrollCert(1), 2000);
         });
         // 2. Add zoom effect to visible cards
         const allCards = document.querySelectorAll('.cert-card');
