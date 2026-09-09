@@ -167,13 +167,7 @@ const projectData = {
             'Surabaya\'s <span class="pm-highlight-red">-64.3% sales anomaly</span> paired with continued high restocking, and Jakarta Barat\'s <span class="pm-highlight-green">+93.6% demand spike</span> paired with insufficient restocking are the clearest cases to act on.'
         ],
         images: [
-            'assets/inventory analyst (1).jpg',
-            'assets/inventory analyst (2).jpg',
-            'assets/inventory analyst (3).jpg',
-            'assets/inventory analyst (4).jpg',
-            'assets/inventory analyst (5).jpg',
-            'assets/inventory analyst (6).jpg',
-            'assets/inventory analyst (7).jpg'
+            'assets/inventory analyst (1).jpg'
         ],
         tools: ['Excel', 'MySQL', 'Python', 'Power BI', 'DAX'],
         links: [
