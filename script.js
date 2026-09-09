@@ -116,38 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ===== Project Detail Modal =====
 const projectData = {
-    'sales-analyst': {
-        title: 'Sales Analyst',
-        badge: 'Data Analysis',
-        badgeClass: 'pm-badge-analysis',
-        overview: 'FMCG distributors sell through hundreds of Food Service customers across multiple regions and channels, making it hard to spot which customers, products, or branches actually drive profit versus just volume. This project turns raw multi-table transactional data into a data-driven <strong>Decision Support tool</strong>: a relational database layer, automated pattern detection, and an interactive Power BI dashboard that lets management track performance, spot revenue concentration risk, and identify churning customers.',
-        workflow: [
-            { num: '1', title: 'Data Preparation (Excel)', desc: 'Consolidated 6 raw source tables (Fact_Sales, Distributor_Master, etc.) totaling 6,000+ rows. Standardized IDs, corrected dates, removed blanks.' },
-            { num: '2', title: 'Database Build & Query (SQL)', desc: 'Built table structure in MySQL, imported cleaned CSVs, wrote 7 targeted analytical queries using JOIN and GROUP BY to answer specific business questions.' },
-            { num: '3', title: 'Pattern & Anomaly Detection (Python)', desc: 'Built a script to trend monthly net sales and flag any month with a sales drop >20% vs. previous month, surfacing 4 anomaly months.' },
-            { num: '4', title: 'Dashboard & Segmentation (Power BI)', desc: 'Built 4-page interactive dashboard. Applied Pareto (80/20) analysis and RFM segmentation to classify customer value and churn risk.' }
-        ],
-        insights: [
-            'Revenue is concentrated in a small group of top customers, a <span class="pm-highlight">concentration risk</span> worth ongoing monitoring.',
-            'Sales grew significantly from 2024 to 2025 (roughly <span class="pm-highlight-green">2.5x</span>), and profit margin improved slightly alongside it, from <span class="pm-highlight">17.9% to 18.1%</span>, meaning growth came <span class="pm-highlight-green">without sacrificing profitability</span>.',
-            '<strong>Retail Tradisional</strong> and <strong>Horeka</strong> are the most profitable channels <span class="pm-highlight">by margin, not by volume</span>, a distinction the volume-only view would miss.',
-            '<strong>Champions</strong> drive the most sales value, while <strong>Lost Customers</strong> show <span class="pm-highlight-red">~273 days average recency</span>, a clear, quantifiable churn-risk segment to act on.',
-            'Salesperson performance varies meaningfully across <span class="pm-highlight-blue">two axes (volume and margin)</span>, making a simple "top seller" ranking insufficient.'
-        ],
-        images: [
-            'assets/sales analyst (1).jpg',
-            'assets/sales analyst (2).jpg',
-            'assets/sales analyst (3).jpg',
-            'assets/sales analyst (4).jpg',
-            'assets/sales analyst (5).jpg',
-            'assets/sales analyst (6).jpg'
-        ],
-        tools: ['Excel', 'MySQL', 'Python (pandas, matplotlib)', 'Power BI (DAX)'],
-        links: [
-            { label: 'View Dashboard (Power BI)', url: 'https://app.powerbi.com/view?r=eyJrIjoiMzM2NzA2ODEtYzQzMS00ZDZjLWE5ZDktZDJkN2UxMjQ5YjRjIiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D' },
-            { label: 'View Code (GitHub)', url: 'https://github.com/juwita23/Sales-Analyst/tree/main' }
-        ]
-    },
     'inventory-analyst': {
         title: 'Inventory Demand Forecasting & Optimization',
         badge: 'Data Analysis',
@@ -240,29 +208,6 @@ const projectData = {
         tools: ['Python', 'BERTopic Algorithm', 'Latent Dirichlet Allocation Algorithm', 'Sastrawi Library', 'Hierarchical Clustering', 'Wordcloud'],
         links: [
             { label: 'Project Files (Google Drive)', url: 'https://drive.google.com/file/d/1R01KPGXg09ItCXf9h7w2UH0rJsN9Xm5P/view?usp=drive_link' }
-        ]
-    },
-    'hr-dashboard': {
-        title: 'HR Dashboard',
-        badge: 'Data Visualization',
-        badgeClass: 'pm-badge-viz',
-        overview: 'Provides a comprehensive overview of workforce metrics, including headcount, attrition, employee demographics, and workforce distribution to support HR decision making.',
-        workflow: [
-            { num: '1', title: 'Data Preparation', desc: 'Cleaned and structured HR employee records.' },
-            { num: '2', title: 'Metric Calculation', desc: 'Calculated attrition rate, tenure, and headcount metrics.' },
-            { num: '3', title: 'Dashboard Building', desc: 'Designed interactive charts for executive monitoring.' }
-        ],
-        insights: [
-            'Identified attrition patterns across job roles, tenure, and salary levels.',
-            'Monitored workforce demographics and organizational composition.',
-            'Supported data driven workforce planning and retention strategies.'
-        ],
-        images: [
-            'assets/hr-dashboard.jpg'
-        ],
-        tools: ['Google Sheets', 'Looker Studio'],
-        links: [
-            { label: 'View Dashboard (Looker Studio)', url: 'https://datastudio.google.com/u/0/reporting/7dc8af70-7f80-4cbd-8dc9-902cf8bead97' }
         ]
     },
     'multi-store-retail': {
