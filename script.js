@@ -177,7 +177,7 @@ const projectData = {
         ],
         tools: ['Excel', 'MySQL', 'Python', 'Power BI', 'DAX'],
         links: [
-            { label: 'View Dashboard (Power BI)', url: 'https://app.powerbi.com/view?r=eyJrIjoiNjFiOGVhYzgtNTNlOC00MjcwLWI1NDYtOTVlNWRiNWUzNDc4IiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D' },
+            { label: 'View Dashboard (Power BI)', url: 'https://app.powerbi.com/view?r=eyJrIjoiOWVmN2VjZjAtMzBkZi00NGY0LTllYTgtNzE1NzllNzIwZTIzIiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D' },
             { label: 'View Code (GitHub)', url: 'https://github.com/juwita23/Inventory-Analyst' }
         ]
     },
