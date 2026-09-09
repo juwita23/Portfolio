@@ -87,6 +87,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'HTML/CSS/JS': { bg: 'rgba(139, 92, 246, 0.15)', color: '#6d28d9', border: '#8b5cf6' },
         'Canva': { bg: 'rgba(14, 165, 233, 0.15)', color: '#0369a1', border: '#0ea5e9' },
         'CapCut': { bg: 'rgba(31, 41, 55, 0.15)', color: '#374151', border: '#4b5563' },
+        'SPSS': { bg: 'rgba(59, 130, 246, 0.15)', color: '#1d4ed8', border: '#3b82f6' },
+        'Multivariate Regression': { bg: 'rgba(249, 115, 22, 0.15)', color: '#c2410c', border: '#f97316' },
+        'Biplot Analysis': { bg: 'rgba(168, 85, 247, 0.15)', color: '#7e22ce', border: '#a855f7' },
         'Excel': { bg: 'rgba(16, 185, 129, 0.15)', color: '#047857', border: '#10b981' }, // Green
         'MySQL': { bg: 'rgba(249, 115, 22, 0.15)', color: '#c2410c', border: '#f97316' }, // Orange
         'Power BI': { bg: 'rgba(234, 179, 8, 0.15)', color: '#a16207', border: '#eab308' }, // Yellow
@@ -295,46 +298,36 @@ const projectData = {
             { label: 'View Dashboard (Power BI)', url: 'https://app.powerbi.com/view?r=eyJrIjoiYTQxZmU2ZTYtMmNhZS00Yjg2LThhZmItMzk2ODM1MDhmOWRiIiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D' }
         ]
     },
-    'student-retention': {
-        title: 'Student Retention & Learning Performance Dashboard',
+    'retail-market-positioning': {
+        title: 'Retail Market Positioning and Consumer Preference Analysis Between Indomaret and Alfamart',
         badge: 'Data Analysis',
         badgeClass: 'pm-badge-analysis',
-        overview: 'Analyzed the Open University Learning Analytics Dataset (OULAD) to identify which distance-learning modules and student segments have the highest withdrawal and fail rates, and which early signals (first assessment score, registration timing) can flag at-risk students before they drop out. Built a star-schema data model and interactive Power BI dashboard covering 32.6K enrolments.',
+        overview: 'This project explores consumer behavior and brand positioning between two major retail competitors, Alfamart and Indomaret, within the Nginden Jangkungan area. Utilizing primary survey data, the study applies Multivariate Regression to identify how monthly expenditure and shopping frequency influence consumer preferences. Furthermore, a Biplot Analysis is used to map brand perception based on five service quality dimensions: Tangibles, Reliability, Responsiveness, Assurance, and Empathy. The ultimate goal is to translate statistical findings into data driven strategic recommendations to improve retail competitiveness and customer loyalty.',
         workflow: [
-            { num: '1', title: 'Data Ingestion & Profiling', desc: 'Loaded 6 raw tables (~245K rows total), verified row counts, keys, and relationships between them.' },
-            { num: '2', title: 'Data Quality Audit & Cleaning', desc: 'Flagged inconsistent formatting, nulls, mismatched records, and duplicates; standardized imd_band formatting, kept nulls as "Unknown" instead of dropping rows, excluded null scores from averages, removed duplicate exam entries.' },
-            { num: '3', title: 'Data Modeling (Star Schema)', desc: 'Transformed raw tables into dim_course, fact_enrolment (merged studentInfo + studentRegistration), and fact_assessment (merged studentAssessment + assessments), with dim_course as the central hub linking both fact tables.' },
-            { num: '4', title: 'KPI Development & Reconciliation', desc: 'Built DAX measures for Total Enrolment, Pass Rate, Withdrawal Rate, Distinction Rate, Fail Rate, and Average First Assessment Score; cross-checked each against manual Excel calculations for accuracy.' },
-            { num: '5', title: 'Dashboard & Visualization', desc: 'Delivered an interactive Power BI report with slicers (module, presentation, gender, age band) to answer the 5 analytical questions.' }
+            { num: '1', title: 'Problem Scoping', desc: 'Identifying the competitive landscape of local minimarkets to define the main research objectives.' },
+            { num: '2', title: 'Data Sampling', desc: 'Executing a two stage cluster sampling method to select highly representative households for the study.' },
+            { num: '3', title: 'Data Collection', desc: 'Gathering primary data using a structured questionnaire built upon the SERVQUAL framework.' },
+            { num: '4', title: 'Data Quality Assurance', desc: 'Performing strict validity and reliability testing to ensure the survey instrument is completely accurate and consistent.' },
+            { num: '5', title: 'Assumption Testing', desc: 'Evaluating multivariate normality, dependency, and multicollinearity to validate the dataset for advanced statistical modeling.' },
+            { num: '6', title: 'Statistical Modeling', desc: 'Developing a Multivariate Regression model to measure the exact impact of spending habits and shopping frequency on brand preference.' },
+            { num: '7', title: 'Visual Positioning', desc: 'Creating a Biplot Analysis to visually map out which specific service indicators resonate most strongly with each retail brand.' },
+            { num: '8', title: 'Strategic Recommendation', desc: 'Translating complex statistical outputs into actionable, real world business strategies for retail management.' }
         ],
         insights: [
-            'Module CCC is highest-risk: <span class="pm-highlight-red">44.5% withdrawal rate</span>, ~3x the safest module. Across most modules, students drop out mid-course rather than fail exams.',
-            'Module GGG is the exception: low withdrawal (<span class="pm-highlight-green">11.5%</span>) but highest fail rate (<span class="pm-highlight-red">28.7%</span>), pointing to exam difficulty rather than motivation.',
-            'First assessment score predicts outcome: students who later withdrew scored <span class="pm-highlight-red">~20 points lower</span> on their first assessment than those who earned distinctions.',
-            'Prior education matters: pass rate rises from <span class="pm-highlight-red">29.6%</span> (no formal qualifications) to <span class="pm-highlight-green">65.4%</span> (postgraduate).',
-            'Growth is outpacing retention: enrolment more than doubled across periods, but withdrawal rate climbed from <span class="pm-highlight-red">26.8% to 34.0%</span> alongside it.'
+            'The analysis is built upon primary data successfully gathered from <span class="pm-highlight-blue">67 household respondents</span> using a rigorous sampling framework.',
+            'The average monthly expenditure of the surveyed consumers is <span class="pm-highlight-green">Rp 1,828,360</span>, with the highest recorded spending reaching Rp 7,000,000.',
+            'Consumers visit these minimarkets 5 times a month on average, with the most active shoppers visiting up to <span class="pm-highlight-blue">20 times a month</span>.',
+            'Spending power directly boosts store preference. A single unit increase in monthly expenditure significantly raises the preference score for <span class="pm-highlight-red">Alfamart by 8.82 points</span> and <span class="pm-highlight-blue">Indomaret by 8.03 points</span>.',
+            '<strong>Indomaret</strong> dominates the overall local market perception by leading in 11 different service indicators, specifically excelling in physical facilities and appearance.',
+            '<strong>Alfamart</strong> holds a highly competitive edge in building customer trust, leading in 8 service indicators with a strong superiority in the assurance category.'
         ],
         images: [
-            'assets/Student Retention (1).jpg',
-            'assets/Student Retention (3).jpg',
-            'assets/Student Retention (4).jpg',
-            'assets/Student Retention (5).jpg',
-            'assets/Student Retention (6).jpg',
-            'assets/Student Retention (7).jpg',
-            'assets/Student Retention (8).jpg',
-            'assets/Student Retention (9).jpg',
-            'assets/Student Retention (10).jpg',
-            'assets/Student Retention (11).jpg',
-            'assets/Student Retention (12).jpg',
-            'assets/Student Retention (13).jpg',
-            'assets/Student Retention (14).jpg',
-            'assets/Student Retention (15).jpg',
-            'assets/Student Retention (16).jpg',
-            'assets/Student Retention (17).jpg'
+            'assets/indomaret_alfamart.jpg'
         ],
-        tools: ['Power BI', 'DAX', 'Excel'],
-        links: [],
-        manualCarousel: true
+        tools: ['SPSS', 'Excel', 'Multivariate Regression', 'Biplot Analysis'],
+        links: [
+            { label: 'View Report Preview', url: 'https://drive.google.com/file/d/15_KrI6OfukRL4X3TPx1q0MbaP8gcLhXF/view?usp=sharing' }
+        ]
     },
     'orientation-dashboard': {
         title: 'Orientation Monitoring Dashboard',
@@ -565,6 +558,9 @@ function openProjectModal(projectId) {
         'Google Apps Script': { bg: 'rgba(239, 68, 68, 0.15)', color: '#b91c1c', border: '#ef4444' },
         'Apps Script': { bg: 'rgba(239, 68, 68, 0.15)', color: '#b91c1c', border: '#ef4444' },
         'HTML/CSS/JS': { bg: 'rgba(139, 92, 246, 0.15)', color: '#6d28d9', border: '#8b5cf6' },
+        'SPSS': { bg: 'rgba(59, 130, 246, 0.15)', color: '#1d4ed8', border: '#3b82f6' },
+        'Multivariate Regression': { bg: 'rgba(249, 115, 22, 0.15)', color: '#c2410c', border: '#f97316' },
+        'Biplot Analysis': { bg: 'rgba(168, 85, 247, 0.15)', color: '#7e22ce', border: '#a855f7' },
         'Excel': { bg: 'rgba(16, 185, 129, 0.15)', color: '#047857', border: '#10b981' },
         'MySQL': { bg: 'rgba(249, 115, 22, 0.15)', color: '#c2410c', border: '#f97316' },
         'SQL (MySQL)': { bg: 'rgba(249, 115, 22, 0.15)', color: '#c2410c', border: '#f97316' },
